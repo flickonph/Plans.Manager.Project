@@ -1,0 +1,16 @@
+
+.fleet/
+
+.idea/
+
+.vscode/
+
+Plans.Manager.BLL/bin/
+
+Plans.Manager.BLL/obj/
+
+Plans.Manager.Desktop/bin/
+
+Plans.Manager.Desktop/obj/
+
+Plans.Manager.sln.DotSettings.user

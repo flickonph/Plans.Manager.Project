@@ -1,0 +1,64 @@
+<ui:FluentWindow
+    Background="{DynamicResource ApplicationBackgroundBrush}"
+    ExtendsContentIntoTitleBar="True"
+    MaxHeight="300"
+    MaxWidth="600"
+    Title="TableManager"
+    WindowBackdropType="Mica"
+    WindowCornerPreference="Round"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d"
+    x:Class="Plans_Manager_WPF.Windows.Helpers.RemoveGroupTemplateWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ui:TitleBar
+            ForceShutdown="False"
+            Grid.Row="0"
+            MinimizeToTray="False"
+            ShowHelp="False"
+            ShowMaximize="False"
+            ShowMinimize="False"
+            UseSnapLayout="True" />
+
+        <StackPanel
+            Grid.Row="1"
+            Margin="10,0,10,10"
+            VerticalAlignment="Center">
+
+            <TextBlock
+                FontSize="16"
+                Margin="5,0,5,10"
+                Text="Введите название группы" />
+
+            <ui:TextBox
+                Margin="0,0,0,10"
+                PlaceholderText="Название группы (чувствительно к регистру)"
+                Name="GroupNameTextBox" />
+
+            <StackPanel
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <ui:Button
+                    Margin="5,0,0,0"
+                    Click="Ok_Button">
+                    Удалить
+                </ui:Button>
+                <ui:Button
+                    Margin="5,0,0,0"
+                    Click="Cancel_Button">
+                    Отмена
+                </ui:Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</ui:FluentWindow>

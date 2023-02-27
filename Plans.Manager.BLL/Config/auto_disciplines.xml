@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<disciplines>
+    <discipline Name="Иностранный язык"/>
+    <discipline Name="История (История России, всеобщая история)"/>
+    <discipline Name="Математика"/>
+    <discipline Name="Общая и неорганическая химия"/>
+    <discipline Name="Инженерная и компьютерная графика"/>
+    <discipline Name="Основы информационных технологий"/>
+    
+    <discipline Name="Элективные дисциплины по физической культуре и спорту"/>
+    <discipline Name="Физическая культура"/>
+</disciplines>

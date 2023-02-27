@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>$(Version)</Version>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>11</LangVersion>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <PackageId>Plans.Manager.Desktop</PackageId>
+    <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+    <AssemblyName>Plans Manager Desktop</AssemblyName>
+    <Company>РХТУ им. Д.И. Менделеева</Company>
+    <Product>Plans Manager Desktop</Product>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <NeutralLanguage>ru</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\applicationIcon-1024.png" />
+    <None Remove="Assets\applicationIcon-256.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\AppIcon.png" />
+    <None Remove="Assets\AppIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Windows" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="App\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <XamlRuntime>Wpf</XamlRuntime>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="3.0.0-preview.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Plans.Manager.BLL\Plans.Manager.BLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\AppIcon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\AppIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

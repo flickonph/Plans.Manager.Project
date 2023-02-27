@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>Plans.Manager.BLL</PackageId>
+        <AssemblyName>Plans Manager BLL</AssemblyName>
+        <Company>РХТУ им. Д.И. Менделеева</Company>
+        <Product>Plans Manager BLL</Product>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="EPPlus" Version="6.1.2" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Config\auto_disciplines.xml" />
+      <None Remove="Config\connection_string.xml" />
+      <None Remove="Config\departments.xml" />
+      <None Remove="Config\groups.xml" />
+      <None Remove="Config\settings.xml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Config\auto_disciplines.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Config\connection_string.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Config\departments.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Config\groups.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Config\settings.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>

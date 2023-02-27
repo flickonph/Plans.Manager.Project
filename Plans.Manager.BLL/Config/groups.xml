@@ -1,0 +1,340 @@
+<EducationalGroups>
+    <!-- ТНВиВМ -->
+    <Group Name="Н-12" Code="18.03.01" Years="1" FacultyName="ТНВиВМ" DepCode="22" AddDepCode="" NumberOfStudents="28" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+    <Group Name="Н-22" Code="18.03.01" Years="2" FacultyName="ТНВиВМ" DepCode="22" AddDepCode="" NumberOfStudents="17" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+    <Group Name="Н-32" Code="18.03.01" Years="3" FacultyName="ТНВиВМ" DepCode="22" AddDepCode="" NumberOfStudents="12" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+    <Group Name="Н-42" Code="18.03.01" Years="4" FacultyName="ТНВиВМ" DepCode="22" AddDepCode="" NumberOfStudents="24" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+
+    <Group Name="Н-14" Code="18.03.01" Years="1" FacultyName="ТНВиВМ" DepCode="24" AddDepCode="" NumberOfStudents="24" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+    <Group Name="Н-24" Code="18.03.01" Years="2" FacultyName="ТНВиВМ" DepCode="24" AddDepCode="" NumberOfStudents="24" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+    <Group Name="Н-34" Code="18.03.01" Years="3" FacultyName="ТНВиВМ" DepCode="24" AddDepCode="" NumberOfStudents="22" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+    <Group Name="Н-44" Code="18.03.01" Years="4" FacultyName="ТНВиВМ" DepCode="24" AddDepCode="" NumberOfStudents="11" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+
+    <Group Name="Н-16" Code="18.03.01" Years="1" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="" NumberOfStudents="29" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+    <Group Name="Н-26" Code="18.03.01" Years="2" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="" NumberOfStudents="25" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+    <Group Name="Н-36" Code="18.03.01" Years="3" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="" NumberOfStudents="16" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+    <Group Name="Н-46" Code="18.03.01" Years="4" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="" NumberOfStudents="20" Direction="Химическая технология тугоплавких неметаллических и силикатных материалов"/>
+
+    <Group Name="Н-11" Code="18.03.01" Years="1" FacultyName="ТНВиВМ" DepCode="29" AddDepCode="" NumberOfStudents="33" Direction="Технология неорганических веществ"/>
+    <Group Name="Н-21" Code="18.03.01" Years="2" FacultyName="ТНВиВМ" DepCode="29" AddDepCode="" NumberOfStudents="26" Direction="Технология неорганических веществ"/>
+    <Group Name="Н-31" Code="18.03.01" Years="3" FacultyName="ТНВиВМ" DepCode="29" AddDepCode="" NumberOfStudents="23" Direction="Технология неорганических веществ"/>
+    <Group Name="Н-41" Code="18.03.01" Years="4" FacultyName="ТНВиВМ" DepCode="29" AddDepCode="" NumberOfStudents="28" Direction="Технология неорганических веществ" />
+
+    <Group Name="Н-13" Code="18.03.01" Years="1" FacultyName="ТНВиВМ" DepCode="29" AddDepCode="" NumberOfStudents="28" Direction="Электрохимическая технология материалов и химических продуктов"/>
+    <Group Name="Н-23" Code="18.03.01" Years="2" FacultyName="ТНВиВМ" DepCode="29" AddDepCode="" NumberOfStudents="20" Direction="Технология электрохимических производств"/>
+    <Group Name="Н-33" Code="18.03.01" Years="3" FacultyName="ТНВиВМ" DepCode="29" AddDepCode="" NumberOfStudents="21" Direction="Технология электрохимических производств"/>
+    <Group Name="Н-43" Code="18.03.01" Years="4" FacultyName="ТНВиВМ" DepCode="29" AddDepCode="" NumberOfStudents="23" Direction="Технология электрохимических производств"/>
+
+    <Group Name="Н-15" Code="18.03.01" Years="1" FacultyName="ТНВиВМ" DepCode="30" AddDepCode="" NumberOfStudents="32" Direction="Химическая технология материалов электроники"/>
+    <Group Name="Н-25" Code="18.03.01" Years="2" FacultyName="ТНВиВМ" DepCode="30" AddDepCode="" NumberOfStudents="24" Direction="Химическая технология материалов и приборов электронной техники и наноэлектроники"/>
+    <Group Name="Н-35" Code="18.03.01" Years="3" FacultyName="ТНВиВМ" DepCode="30" AddDepCode="" NumberOfStudents="22" Direction="Химическая технология материалов и приборов электронной техники и наноэлектроники"/>
+    <Group Name="Н-45" Code="18.03.01" Years="4" FacultyName="ТНВиВМ" DepCode="30" AddDepCode="" NumberOfStudents="28" Direction="Химическая технология материалов и приборов электронной техники и наноэлектроники"/>
+
+    <Group Name="Н-17" Code="29.03.04" Years="1" FacultyName="ТНВиВМ" DepCode="21" AddDepCode="" NumberOfStudents="30" Direction="Технология художественной обработки материалов"/>
+    <Group Name="Н-27" Code="29.03.04" Years="2" FacultyName="ТНВиВМ" DepCode="21" AddDepCode="" NumberOfStudents="29" Direction="Технология художественной обработки материалов"/>
+    <Group Name="Н-37" Code="29.03.04" Years="3" FacultyName="ТНВиВМ" DepCode="21" AddDepCode="" NumberOfStudents="13" Direction="Технология художественной обработки материалов"/>
+    <Group Name="Н-47" Code="29.03.04" Years="4" FacultyName="ТНВиВМ" DepCode="21" AddDepCode="" NumberOfStudents="15" Direction="Технология художественной обработки материалов"/>
+
+    <Group Name="Н-18" Code="15.03.02" Years="1" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="24" NumberOfStudents="15" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
+    <Group Name="Н-28" Code="15.03.02" Years="2" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="24" NumberOfStudents="22" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
+    <Group Name="Н-38" Code="15.03.02" Years="3" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="" NumberOfStudents="12" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
+    <Group Name="Н-39" Code="15.03.02" Years="3" FacultyName="ТНВиВМ" DepCode="24" AddDepCode="" NumberOfStudents="12" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
+    <Group Name="Н-48" Code="15.03.02" Years="4" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="24" NumberOfStudents="18" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
+
+    <Group Name="Н-10" Code="22.03.01" Years="1" FacultyName="ТНВиВМ" DepCode="30" AddDepCode="" NumberOfStudents="24" Direction="Материаловедение для фотоники и электроники"/>
+
+    <!-- ЦиТХИн -->
+    <Group Name="ТМ-19" Code="27.03.05" Years="1" FacultyName="ЦиТХИн" DepCode="54" AddDepCode="" NumberOfStudents="20" Direction="Инноватика наукоемких энергоресурсосберегающих производств нефтегазохимического комплекса"/>
+
+    <Group Name="Ц-13" Code="18.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="15" AddDepCode="" NumberOfStudents="17" Direction="Рациональное использование сырьевых и энергетических ресурсов"/>
+    <Group Name="Ц-23" Code="18.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="15" AddDepCode="" NumberOfStudents="26" Direction="Рациональное использование сырьевых и энергетических ресурсов"/>
+    <Group Name="ТМ-34" Code="18.03.02" Years="3" FacultyName="ЦиТХИн" DepCode="15" AddDepCode="" NumberOfStudents="21" Direction="Рациональное использование сырьевых и энергетических ресурсов"/>
+    <Group Name="ТМ-44" Code="18.03.02" Years="4" FacultyName="ЦиТХИн" DepCode="15" AddDepCode="" NumberOfStudents="22" Direction="Рациональное использование сырьевых и энергетических ресурсов"/>
+
+    <Group Name="Ц-14" Code="18.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="54" AddDepCode="" NumberOfStudents="17" Direction="Противокоррозионная защита материалов"/>
+    <Group Name="Ц-24" Code="18.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="54" AddDepCode="" NumberOfStudents="28" Direction="Противокоррозионная защита материалов"/>
+    <Group Name="ТМ-36" Code="18.03.02" Years="3" FacultyName="ЦиТХИн" DepCode="54" AddDepCode="" NumberOfStudents="28" Direction="Рациональное использование сырьевых и энергетических ресурсов"/>
+    <Group Name="ТМ-46" Code="18.03.02" Years="4" FacultyName="ЦиТХИн" DepCode="54" AddDepCode="" NumberOfStudents="24" Direction="Рациональное использование сырьевых и энергетических ресурсов"/>
+
+    <Group Name="Ц-15" Code="18.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="54" AddDepCode="" NumberOfStudents="16" Direction="Энергоресурсосберегающие химические производства"/>
+    <Group Name="Ц-25" Code="18.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="54" AddDepCode="" NumberOfStudents="22" Direction="Энергоресурсосберегающие химические производства"/>
+    <Group Name="ТМ-37" Code="18.03.02" Years="3" FacultyName="ЦиТХИн" DepCode="54" AddDepCode="" NumberOfStudents="17" Direction="Энергоресурсосберегающие химические производства"/>
+    <Group Name="ТМ-47" Code="18.03.02" Years="4" FacultyName="ЦиТХИн" DepCode="54" AddDepCode="" NumberOfStudents="17" Direction="Энергоресурсосберегающие химические производства"/>
+
+    <Group Name="Ц-11" Code="18.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="13" Direction="Основные процессы химических производств и химическая кибернетика"/>
+    <Group Name="Ц-21" Code="18.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="22" Direction="Основные процессы химических производств и химическая кибернетика"/>
+    <Group Name="Ц-12" Code="18.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="14" Direction="Основные процессы химических производств и химическая кибернетика"/>
+    <Group Name="Ц-22" Code="18.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="21" Direction="Основные процессы химических производств и химическая кибернетика"/>
+
+    <Group Name="К-31" Code="18.03.02" Years="3" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="14" Direction="Основные процессы химических производств и химическая кибернетика"/>
+    <Group Name="К-41" Code="18.03.02" Years="4" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="16" Direction="Основные процессы химических производств и химическая кибернетика"/>
+    <Group Name="К-32" Code="18.03.02" Years="3" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="15" Direction="Основные процессы химических производств и химическая кибернетика"/>
+    <Group Name="К-42" Code="18.03.02" Years="4" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="11" Direction="Основные процессы химических производств и химическая кибернетика"/>
+
+    <Group Name="К-15" Code="28.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="26" Direction="Наноинженерия для химии, фармацевтики и биотехнологии"/>
+    <Group Name="К-25" Code="28.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="19" Direction="Наноинженерия для химии, фармацевтики и биотехнологии"/>
+    <Group Name="К-35" Code="28.03.02" Years="3" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="19" Direction="Наноинженерия для химии, фармацевтики и биотехнологии"/>
+    <Group Name="К-45" Code="28.03.02" Years="4" FacultyName="ЦиТХИн" DepCode="44" AddDepCode="" NumberOfStudents="20" Direction="Наноинженерия для химии, фармацевтики и биотехнологии"/>
+
+    <Group Name="К-17" Code="28.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="66" AddDepCode="" NumberOfStudents="26" Direction="Биомедицинские и фармацевтические нанотехнологии"/>
+    <Group Name="К-27" Code="28.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="66" AddDepCode="" NumberOfStudents="18" Direction="Биомедицинские и фармацевтические нанотехнологии"/>
+
+    <Group Name="Кс-14" Code="09.03.01" Years="1" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="26" Direction="Системы автоматизированного проектирования химических производств"/>
+    <Group Name="Кс-24" Code="09.03.01" Years="2" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="20" Direction="Системы автоматизированного проектирования химических производств"/>
+    <Group Name="Кс-38" Code="09.03.02" Years="3" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="21" Direction="Информационные системы и технологии"/>
+    <Group Name="Кс-44" Code="09.03.01" Years="4" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="19" Direction="Системы автоматизированного проектирования химических производств"/>
+
+    <Group Name="Кс-13" Code="09.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="27" Direction="Информационные системы и технологии"/>
+    <Group Name="Кс-23" Code="09.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="19" Direction="Информационные системы и технологии"/>
+    <Group Name="Кс-33" Code="09.03.01" Years="3" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="16" Direction="Системы автоматизированного проектирования химических производств"/>
+
+    <Group Name="Кс-10" Code="09.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="27" Direction="Информационные системы и технологии"/>
+    <Group Name="Кс-20" Code="09.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="20" Direction="Информационные системы и технологии"/>
+    <Group Name="Кс-30" Code="09.03.02" Years="3" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="21" Direction="Информационные системы и технологии"/>
+    <Group Name="Кс-40" Code="09.03.02" Years="4" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="13" Direction="Информационные системы и технологии"/>
+
+    <Group Name="Кс-16" Code="09.03.02" Years="1" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="27" Direction="Информационные системы и технологии"/>
+    <Group Name="Кс-26" Code="09.03.02" Years="2" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="19" Direction="Информационные системы и технологии"/>
+    <Group Name="Кс-36" Code="09.03.02" Years="3" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="20" Direction="Информационные системы и технологии"/>
+    <Group Name="Кс-46" Code="09.03.02" Years="4" FacultyName="ЦиТХИн" DepCode="46" AddDepCode="" NumberOfStudents="13" Direction="Информационные системы и технологии"/>
+
+    <Group Name="ТМ-11" Code="22.03.01" Years="1" FacultyName="ЦиТХИн" DepCode="59" AddDepCode="" NumberOfStudents="20" Direction="Электрохимия в материаловедении"/>
+    <Group Name="ТМ-21" Code="22.03.01" Years="2" FacultyName="ЦиТХИн" DepCode="59" AddDepCode="" NumberOfStudents="17" Direction="Материаловедение и технологии защиты от коррозии"/>
+
+    <Group Name="ТМ-12" Code="27.03.01" Years="1" FacultyName="ЦиТХИн" DepCode="59" AddDepCode="" NumberOfStudents="17" Direction="Стандартизация и сертификация"/>
+    <Group Name="ТМ-22" Code="27.03.01" Years="2" FacultyName="ЦиТХИн" DepCode="59" AddDepCode="" NumberOfStudents="22" Direction="Стандартизация и сертификация"/>
+    <Group Name="ТМ-32" Code="27.03.01" Years="3" FacultyName="ЦиТХИн" DepCode="59" AddDepCode="" NumberOfStudents="12" Direction="Стандартизация и сертификация"/>
+    <Group Name="ТМ-42" Code="27.03.01" Years="4" FacultyName="ЦиТХИн" DepCode="59" AddDepCode="" NumberOfStudents="24" Direction="Стандартизация и сертификация"/>
+
+    <Group Name="ТМ-13" Code="27.03.01" Years="1" FacultyName="ЦиТХИн" DepCode="59" AddDepCode="" NumberOfStudents="13" Direction="Стандартизация и сертификация"/>
+    <Group Name="ТМ-33" Code="18.03.01" Years="3" FacultyName="ЦиТХИн" DepCode="59" AddDepCode="" NumberOfStudents="14" Direction="Технология защиты от коррозии"/>
+    <Group Name="ТМ-43" Code="18.03.01" Years="4" FacultyName="ЦиТХИн" DepCode="59" AddDepCode="" NumberOfStudents="22" Direction="Технология защиты от коррозии"/>
+
+    <!-- ИМСЭН-ИФХ -->
+    <Group Name="Ф-12" Code="18.05.02" Years="1" FacultyName="ИМСЭН-ИФХ" DepCode="27" AddDepCode="" NumberOfStudents="31" Direction="Химическая технология разделения и применение изотопов"/>
+    <Group Name="Ф-22" Code="18.05.02" Years="2" FacultyName="ИМСЭН-ИФХ" DepCode="27" AddDepCode="" NumberOfStudents="25" Direction="Химическая технология разделения и применение изотопов"/>
+    <Group Name="Ф-32" Code="18.05.02" Years="3" FacultyName="ИМСЭН-ИФХ" DepCode="27" AddDepCode="" NumberOfStudents="27" Direction="Технология разделения и применение изотопов"/>
+    <Group Name="Ф-42" Code="18.05.02" Years="4" FacultyName="ИМСЭН-ИФХ" DepCode="27" AddDepCode="" NumberOfStudents="20" Direction="Технология разделения и применение изотопов" />
+    <Group Name="Ф-52" Code="18.05.02" Years="5" FacultyName="ИМСЭН-ИФХ" DepCode="27" AddDepCode="" NumberOfStudents="15" Direction="Технология разделения и применение изотопов"/>
+    <Group Name="Ф-62" Code="18.05.02" Years="6" FacultyName="ИМСЭН-ИФХ" DepCode="27" AddDepCode="" NumberOfStudents="30" Direction="Технология разделения и применение изотопов"/>
+
+    <Group Name="Ф-16" Code="18.05.02" Years="1" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="26" Direction="Химическая технология материалов ядерного топливного цикла"/>
+    <Group Name="Ф-26" Code="18.05.02" Years="2" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="27" Direction="Химическая технология материалов ядерного топливного цикла"/>
+    <Group Name="Ф-36" Code="18.05.02" Years="3" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="28" Direction="Химическая технология материалов ядерного топливного цикла"/>
+    <Group Name="Ф-46" Code="18.05.02" Years="4" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="14" Direction="Химическая технология материалов ядерного топливного цикла" />
+    <Group Name="Ф-56" Code="18.05.02" Years="5" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="14" Direction="Химическая технология материалов ядерного топливного цикла"/>
+    <Group Name="Ф-66" Code="18.05.02" Years="6" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="36" Direction="Химическая технология материалов ядерного топливного цикла"/>
+
+    <Group Name="Ф-17" Code="18.05.02" Years="1" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="27" Direction="Химическая технология материалов ядерного топливного цикла"/>
+    <Group Name="Ф-27" Code="18.05.02" Years="2" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="24" Direction="Химическая технология материалов ядерного топливного цикла"/>
+    <Group Name="Ф-37" Code="18.05.02" Years="3" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="30" Direction="Химическая технология материалов ядерного топливного цикла"/>
+    <Group Name="Ф-47" Code="18.05.02" Years="4" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="15" Direction="Химическая технология материалов ядерного топливного цикла" />
+    <Group Name="Ф-57" Code="18.05.02" Years="5" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="12" Direction="Химическая технология материалов ядерного топливного цикла"/>
+    <!--<Group Name="Ф-67" Code="18.05.02" Years="6" FacultyName="ИМСЭН-ИФХ" DepCode="26" AddDepCode="" NumberOfStudents="0" Direction="Химическая технология материалов ядерного топливного цикла"/>-->
+
+    <Group Name="Ф-15" Code="18.05.02" Years="1" FacultyName="ИМСЭН-ИФХ" DepCode="25" AddDepCode="" NumberOfStudents="31" Direction="Химическая технология теплоносителей и радиоэкология ядерных энергетических установок"/>
+    <Group Name="Ф-25" Code="18.05.02" Years="2" FacultyName="ИМСЭН-ИФХ" DepCode="25" AddDepCode="" NumberOfStudents="30" Direction="Химическая технология теплоносителей и радиоэкология ядерных энергетических установок"/>
+    <Group Name="Ф-35" Code="18.05.02" Years="3" FacultyName="ИМСЭН-ИФХ" DepCode="25" AddDepCode="" NumberOfStudents="23" Direction="Технология теплоносителей и радиоэкология ядерных энергетических установок"/>
+    <!--<Group Name="Ф-45" Code="18.05.02" Years="4" FacultyName="ИМСЭН-ИФХ" DepCode="25" AddDepCode="" NumberOfStudents="0" Direction="Технология теплоносителей и радиоэкология ядерных энергетических установок" />-->
+    <Group Name="Ф-55" Code="18.05.02" Years="5" FacultyName="ИМСЭН-ИФХ" DepCode="25" AddDepCode="" NumberOfStudents="28" Direction="Технология теплоносителей и радиоэкология ядерных энергетических установок"/>
+    <Group Name="Ф-55а" Code="18.05.02" Years="5" FacultyName="ИМСЭН-ИФХ" DepCode="25" AddDepCode="" NumberOfStudents="0" Direction="Технология теплоносителей и радиоэкология ядерных энергетических установок"/>
+    <Group Name="Ф-65" Code="18.05.02" Years="6" FacultyName="ИМСЭН-ИФХ" DepCode="25" AddDepCode="" NumberOfStudents="31" Direction="Технология теплоносителей и радиоэкология ядерных энергетических установок"/>
+
+    <Group Name="Ф-10" Code="28.03.03" Years="1" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="18" Direction="Химическая технология наноматериалов"/>
+    <Group Name="Ф-20" Code="28.03.03" Years="2" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="30" Direction="Химическая технология наноматериалов"/>
+    <Group Name="Ф-30" Code="28.03.03" Years="3" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="20" Direction="Химическая технология наноматериалов"/>
+    <Group Name="Ф-40" Code="28.03.03" Years="4" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="24" Direction="Химическая технология наноматериалов"/>
+
+    <Group Name="Ф-11" Code="28.03.03" Years="1" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="19" Direction="Химическая технология наноматериалов"/>
+    <Group Name="Ф-21" Code="28.03.03" Years="2" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="0" Direction="Химическая технология наноматериалов"/>
+    <Group Name="Ф-31" Code="28.03.03" Years="3" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="0" Direction="Химическая технология наноматериалов"/>
+
+    <Group Name="Ф-14" Code="22.03.01" Years="1" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="22" Direction="Материаловедение и технологии наноматериалов и наносистем"/>
+    <Group Name="Ф-24" Code="22.03.01" Years="2" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="22" Direction="Материаловедение и технологии наноматериалов и наносистем"/>
+    <Group Name="Ф-34" Code="22.03.01" Years="3" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="15" Direction="Материаловедение и технологии наноматериалов и наносистем"/>
+    <Group Name="Ф-44" Code="22.03.01" Years="4" FacultyName="ИМСЭН-ИФХ" DepCode="28" AddDepCode="" NumberOfStudents="29" Direction="Материаловедение и технологии наноматериалов и наносистем"/>
+
+    <!-- БПЭ -->
+    <Group Name="Э-11" Code="18.03.02" Years="1" FacultyName="БПЭ" DepCode="48" AddDepCode="" NumberOfStudents="22" Direction="Охрана окружающей среды и рациональное использование природных ресурсов"/>
+    <Group Name="Э-21" Code="18.03.02" Years="2" FacultyName="БПЭ" DepCode="48" AddDepCode="" NumberOfStudents="14" Direction="Охрана окружающей среды и рациональное использование природных ресурсов"/>
+    <Group Name="Э-31" Code="18.03.02" Years="3" FacultyName="БПЭ" DepCode="48" AddDepCode="" NumberOfStudents="18" Direction="Охрана окружающей среды и рациональное использование природных ресурсов"/>
+    <Group Name="Э-32" Code="18.03.02" Years="3" FacultyName="БПЭ" DepCode="48" AddDepCode="" NumberOfStudents="0" Direction="Охрана окружающей среды и рациональное использование природных ресурсов"/>
+    <Group Name="Э-41" Code="18.03.02" Years="4" FacultyName="БПЭ" DepCode="48" AddDepCode="" NumberOfStudents="17" Direction="Охрана окружающей среды и рациональное использование природных ресурсов"/>
+
+    <Group Name="Э-13" Code="18.03.02" Years="1" FacultyName="БПЭ" DepCode="48" AddDepCode="" NumberOfStudents="18" Direction="Охрана окружающей среды и рациональное использование природных ресурсов"/>
+    <Group Name="Э-23" Code="18.03.02" Years="2" FacultyName="БПЭ" DepCode="48" AddDepCode="" NumberOfStudents="18" Direction="Охрана окружающей среды и рациональное использование природных ресурсов"/>
+    <Group Name="Э-33" Code="18.03.02" Years="3" FacultyName="БПЭ" DepCode="48" AddDepCode="" NumberOfStudents="19" Direction="Охрана окружающей среды и рациональное использование природных ресурсов"/>
+    <Group Name="Э-43" Code="18.03.02" Years="4" FacultyName="БПЭ" DepCode="48" AddDepCode="" NumberOfStudents="21" Direction="Охрана окружающей среды и рациональное использование природных ресурсов"/>
+
+    <Group Name="Э-14" Code="19.03.01" Years="1" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="25" Direction="Биотехнология"/>
+    <Group Name="Э-24" Code="19.03.01" Years="2" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="26" Direction="Биотехнология"/>
+    <Group Name="Э-34" Code="19.03.01" Years="3" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="24" Direction="Биотехнология"/>
+    <Group Name="Э-44" Code="19.03.01" Years="4" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="22" Direction="Биотехнология"/>
+
+    <Group Name="Э-15" Code="19.03.01" Years="1" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="24" Direction="Биотехнология"/>
+    <Group Name="Э-25" Code="19.03.01" Years="2" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="27" Direction="Биотехнология"/>
+    <Group Name="Э-35" Code="19.03.01" Years="3" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="22" Direction="Биотехнология"/>
+    <Group Name="Э-45" Code="19.03.01" Years="4" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="23" Direction="Биотехнология"/>
+
+    <Group Name="Э-16" Code="19.03.01" Years="1" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="23" Direction="Биотехнология"/>
+    <Group Name="Э-26" Code="19.03.01" Years="2" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="25" Direction="Биотехнология"/>
+    <Group Name="Э-36" Code="19.03.01" Years="3" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="20" Direction="Биотехнология"/>
+    <Group Name="Э-46" Code="19.03.01" Years="4" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="21" Direction="Биотехнология"/>
+
+    <Group Name="Э-17" Code="19.03.01" Years="1" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="23" Direction="Биотехнология"/>
+    <Group Name="Э-27" Code="19.03.01" Years="2" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="18" Direction="Биотехнология"/>
+    <Group Name="Э-37" Code="19.03.01" Years="3" FacultyName="БПЭ" DepCode="47" AddDepCode="" NumberOfStudents="0" Direction="Биотехнология"/>
+
+    <!-- ИХТ -->
+    <Group Name="И-14" Code="20.03.01" Years="1" FacultyName="ИХТ" DepCode="43" AddDepCode="" NumberOfStudents="24" Direction="Безопасность технологических процессов и производств"/>
+    <Group Name="И-24" Code="20.03.01" Years="2" FacultyName="ИХТ" DepCode="43" AddDepCode="" NumberOfStudents="19" Direction="Безопасность технологических процессов и производств"/>
+    <Group Name="И-34" Code="20.03.01" Years="3" FacultyName="ИХТ" DepCode="43" AddDepCode="" NumberOfStudents="25" Direction="Безопасность технологических процессов и производств"/>
+    <Group Name="И-44" Code="20.03.01" Years="4" FacultyName="ИХТ" DepCode="43" AddDepCode="" NumberOfStudents="27" Direction="Безопасность технологических процессов и производств"/>
+
+    <Group Name="И-12" Code="20.03.01" Years="1" FacultyName="ИХТ" DepCode="43" AddDepCode="" NumberOfStudents="25" Direction="Безопасность технологических процессов и производств"/>
+    <Group Name="И-22" Code="20.03.01" Years="2" FacultyName="ИХТ" DepCode="43" AddDepCode="" NumberOfStudents="17" Direction="Безопасность технологических процессов и производств"/>
+    <Group Name="И-42" Code="20.03.01" Years="4" FacultyName="ИХТ" DepCode="43" AddDepCode="" NumberOfStudents="0" Direction="Безопасность технологических процессов и производств"/>
+
+    <Group Name="И-13" Code="18.05.01" Years="1" FacultyName="ИХТ" DepCode="41" AddDepCode="" NumberOfStudents="20" Direction="Химическая технология органических соединений азота"/>
+    <Group Name="И-23" Code="18.05.01" Years="2" FacultyName="ИХТ" DepCode="41" AddDepCode="" NumberOfStudents="16" Direction="Химическая технология органических соединений азота"/>
+    <Group Name="И-33" Code="18.05.01" Years="3" FacultyName="ИХТ" DepCode="41" AddDepCode="" NumberOfStudents="24" Direction="Химическая технология органических соединений азота"/>
+    <Group Name="И-43" Code="18.05.01" Years="4" FacultyName="ИХТ" DepCode="41" AddDepCode="" NumberOfStudents="22" Direction="Химическая технология органических соединений азота"/>
+    <Group Name="И-53" Code="18.05.01" Years="5" FacultyName="ИХТ" DepCode="41" AddDepCode="" NumberOfStudents="20" Direction="Химическая технология органических соединений азота"/>
+    <Group Name="И-63" Code="18.05.01" Years="6" FacultyName="ИХТ" DepCode="41" AddDepCode="" NumberOfStudents="20" Direction="Химическая технология органических соединений азота"/>
+
+    <Group Name="И-11" Code="18.05.01" Years="1" FacultyName="ИХТ" DepCode="41" AddDepCode="" NumberOfStudents="20" Direction="Химическая технология органических соединений азота"/>
+    <Group Name="И-21" Code="18.05.01" Years="2" FacultyName="ИХТ" DepCode="41" AddDepCode="" NumberOfStudents="18" Direction="Химическая технология органических соединений азота"/>
+
+    <Group Name="И-15" Code="18.05.01" Years="1" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="21" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+    <Group Name="И-25" Code="18.05.01" Years="2" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="19" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+    <Group Name="И-35" Code="18.05.01" Years="3" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="25" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+    <Group Name="И-45" Code="18.05.01" Years="4" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="16" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+    <Group Name="И-55" Code="18.05.01" Years="5" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="15" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+    <Group Name="И-65" Code="18.05.01" Years="6" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="12" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+
+    <Group Name="И-17" Code="18.05.01" Years="1" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="20" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+    <Group Name="И-27" Code="18.05.01" Years="2" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="13" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+    <!--<Group Name="И-37" Code="18.05.01" Years="3" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="0" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+    <Group Name="И-47" Code="18.05.01" Years="4" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="0" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>
+    <Group Name="И-67" Code="18.05.01" Years="6" FacultyName="ИХТ" DepCode="42" AddDepCode="" NumberOfStudents="0" Direction="Химическая технология полимерных композиций, порохов и твердых ракетных топлив"/>-->
+
+    <!-- НПМ -->
+    <Group Name="П-11" Code="18.03.01" Years="1" FacultyName="НПМ" DepCode="39" AddDepCode="" NumberOfStudents="34" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-12" Code="18.03.01" Years="1" FacultyName="НПМ" DepCode="35" AddDepCode="" NumberOfStudents="34" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-13" Code="18.03.01" Years="1" FacultyName="НПМ" DepCode="40" AddDepCode="" NumberOfStudents="34" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-14" Code="18.03.01" Years="1" FacultyName="НПМ" DepCode="36" AddDepCode="" NumberOfStudents="33" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-15" Code="18.03.01" Years="1" FacultyName="НПМ" DepCode="38" AddDepCode="" NumberOfStudents="33" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-16" Code="18.03.01" Years="1" FacultyName="НПМ" DepCode="70" AddDepCode="" NumberOfStudents="34" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+
+    <Group Name="П-21" Code="18.03.01" Years="2" FacultyName="НПМ" DepCode="39" AddDepCode="" NumberOfStudents="28" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-22" Code="18.03.01" Years="2" FacultyName="НПМ" DepCode="35" AddDepCode="" NumberOfStudents="28" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-23" Code="18.03.01" Years="2" FacultyName="НПМ" DepCode="40" AddDepCode="" NumberOfStudents="27" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-24" Code="18.03.01" Years="2" FacultyName="НПМ" DepCode="36" AddDepCode="" NumberOfStudents="27" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-25" Code="18.03.01" Years="2" FacultyName="НПМ" DepCode="38" AddDepCode="" NumberOfStudents="25" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <Group Name="П-26" Code="18.03.01" Years="2" FacultyName="НПМ" DepCode="70" AddDepCode="" NumberOfStudents="29" Direction="Технологии нефтегазохимии, промышленного органического синтеза, полимерных и функциональных материалов"/>
+    <!--<Group Name="П-27" Code="18.03.01" Years="2" FacultyName="НПМ" DepCode="70" AddDepCode="" NumberOfStudents="29" Direction=""/>-->
+    
+    <Group Name="П-31" Code="18.03.01" Years="3" FacultyName="НПМ" DepCode="39" AddDepCode="" NumberOfStudents="28" Direction="Нефтегазохимия и полимерные материалы"/>
+    <Group Name="П-32" Code="18.03.01" Years="3" FacultyName="НПМ" DepCode="35" AddDepCode="" NumberOfStudents="29" Direction="Технология основного органического и нефтехимического синтеза"/>
+    <Group Name="П-33" Code="18.03.01" Years="3" FacultyName="НПМ" DepCode="40" AddDepCode="" NumberOfStudents="27" Direction="Нефтегазохимия и полимерные материалы"/>
+    <Group Name="П-34" Code="18.03.01" Years="3" FacultyName="НПМ" DepCode="36" AddDepCode="" NumberOfStudents="28" Direction="Технология тонкого органического синтеза"/>
+    <Group Name="П-35" Code="18.03.01" Years="3" FacultyName="НПМ" DepCode="38" AddDepCode="" NumberOfStudents="27" Direction="Нефтегазохимия и полимерные материалы"/>
+    <Group Name="П-36" Code="18.03.01" Years="3" FacultyName="НПМ" DepCode="70" AddDepCode="" NumberOfStudents="23" Direction="Химическая технология природных энергоносителей и углеродных материалов"/>
+
+    <!--<Group Name="П-41" Code="18.03.01" Years="4" FacultyName="НПМ" DepCode="35" AddDepCode="" NumberOfStudents="30" Direction=""/>-->
+    <Group Name="П-42" Code="18.03.01" Years="4" FacultyName="НПМ" DepCode="35" AddDepCode="" NumberOfStudents="19" Direction="Технология основного органического и нефтехимического синтеза"/>
+    <Group Name="П-48" Code="18.03.01" Years="4" FacultyName="НПМ" DepCode="35" AddDepCode="" NumberOfStudents="15" Direction="Технология основного органического и нефтехимического синтеза"/>
+    <Group Name="П-43" Code="18.03.01" Years="4" FacultyName="НПМ" DepCode="40" AddDepCode="" NumberOfStudents="29" Direction="Технология и переработка полимеров"/>
+    <Group Name="П-44" Code="18.03.01" Years="4" FacultyName="НПМ" DepCode="36" AddDepCode="" NumberOfStudents="29" Direction="Технология тонкого органического синтеза"/>
+    <Group Name="П-45" Code="18.03.01" Years="4" FacultyName="НПМ" DepCode="38" AddDepCode="" NumberOfStudents="27" Direction="Химическая технология природных энергоносителей и углеродных материалов"/>
+    <!--<Group Name="П-46" Code="18.03.01" Years="4" FacultyName="НПМ" DepCode="38" AddDepCode="" NumberOfStudents="25" Direction=""/>-->
+
+    <Group Name="П-10" Code="15.03.02" Years="1" FacultyName="НПМ" DepCode="40" AddDepCode="" NumberOfStudents="17" Direction="Технологические машины и оборудование переработки полимеров"/>
+    <Group Name="П-20" Code="15.03.02" Years="2" FacultyName="НПМ" DepCode="40" AddDepCode="" NumberOfStudents="12" Direction="Технологические машины и оборудование переработки полимеров"/>
+    <Group Name="П-30" Code="15.03.02" Years="3" FacultyName="НПМ" DepCode="40" AddDepCode="" NumberOfStudents="42" Direction="Технологические машины и оборудование переработки полимеров"/>
+
+    <!-- ХФТиБП -->
+    <Group Name="О-12" Code="18.03.01" Years="1" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="0" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-22" Code="18.03.01" Years="2" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="17" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-32" Code="18.03.01" Years="3" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="18" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-42" Code="18.03.01" Years="4" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="25" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+
+    <Group Name="О-16" Code="18.03.01" Years="1" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="24" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-26" Code="18.03.01" Years="2" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="19" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-36" Code="18.03.01" Years="3" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="22" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-46" Code="18.03.01" Years="4" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="25" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+
+    <Group Name="О-13" Code="18.03.01" Years="1" FacultyName="ХФТиБП" DepCode="31" AddDepCode="" NumberOfStudents="25" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-23" Code="18.03.01" Years="2" FacultyName="ХФТиБП" DepCode="31" AddDepCode="" NumberOfStudents="28" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-33" Code="18.03.01" Years="3" FacultyName="ХФТиБП" DepCode="31" AddDepCode="" NumberOfStudents="20" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-43" Code="18.03.01" Years="4" FacultyName="ХФТиБП" DepCode="31" AddDepCode="" NumberOfStudents="31" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+
+    <Group Name="О-14" Code="18.03.01" Years="1" FacultyName="ХФТиБП" DepCode="32" AddDepCode="" NumberOfStudents="24" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-24" Code="18.03.01" Years="2" FacultyName="ХФТиБП" DepCode="32" AddDepCode="" NumberOfStudents="21" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-34" Code="18.03.01" Years="3" FacultyName="ХФТиБП" DepCode="32" AddDepCode="" NumberOfStudents="29" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-44" Code="18.03.01" Years="4" FacultyName="ХФТиБП" DepCode="32" AddDepCode="" NumberOfStudents="23" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+
+    <Group Name="О-15" Code="18.03.01" Years="1" FacultyName="ХФТиБП" DepCode="32" AddDepCode="" NumberOfStudents="25" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-25" Code="18.03.01" Years="2" FacultyName="ХФТиБП" DepCode="32" AddDepCode="" NumberOfStudents="21" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-35" Code="18.03.01" Years="3" FacultyName="ХФТиБП" DepCode="32" AddDepCode="" NumberOfStudents="30" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-45" Code="18.03.01" Years="4" FacultyName="ХФТиБП" DepCode="32" AddDepCode="" NumberOfStudents="25" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+
+    <Group Name="О-17" Code="18.03.01" Years="1" FacultyName="ХФТиБП" DepCode="37" AddDepCode="" NumberOfStudents="24" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-27" Code="18.03.01" Years="2" FacultyName="ХФТиБП" DepCode="37" AddDepCode="" NumberOfStudents="18" Direction="Технология органических веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-37" Code="18.03.01" Years="3" FacultyName="ХФТиБП" DepCode="37" AddDepCode="" NumberOfStudents="18" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+    <Group Name="О-47" Code="18.03.01" Years="4" FacultyName="ХФТиБП" DepCode="37" AddDepCode="" NumberOfStudents="24" Direction="Технология синтетических биологически активных веществ, химико-фармацевтических препаратов и косметических средств"/>
+
+    <Group Name="О-18" Code="04.05.01" Years="1" FacultyName="ХФТиБП" DepCode="31" AddDepCode="" NumberOfStudents="25" Direction="Медицинская химия"/>
+    <Group Name="О-28" Code="04.05.01" Years="2" FacultyName="ХФТиБП" DepCode="31" AddDepCode="" NumberOfStudents="35" Direction="Медицинская химия"/>
+    <Group Name="О-38" Code="04.05.01" Years="3" FacultyName="ХФТиБП" DepCode="31" AddDepCode="" NumberOfStudents="32" Direction="Медицинская химия"/>
+    <Group Name="О-48" Code="04.05.01" Years="4" FacultyName="ХФТиБП" DepCode="31" AddDepCode="" NumberOfStudents="22" Direction="Медицинская химия"/>
+    <Group Name="О-58" Code="04.05.01" Years="5" FacultyName="ХФТиБП" DepCode="31" AddDepCode="" NumberOfStudents="22" Direction="Медицинская химия"/>
+
+    <Group Name="О-19" Code="04.05.01" Years="1" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="26" Direction="Медицинская химия"/>
+    <Group Name="О-29" Code="04.05.01" Years="2" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="20" Direction="Медицинская химия"/>
+    <Group Name="О-39" Code="04.05.01" Years="3" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="23" Direction="Медицинская химия"/>
+    <Group Name="О-49" Code="04.05.01" Years="4" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="11" Direction="Медицинская химия"/>
+    <Group Name="О-59" Code="04.05.01" Years="5" FacultyName="ХФТиБП" DepCode="34" AddDepCode="" NumberOfStudents="8" Direction="Медицинская химия"/>
+
+    <!-- ФЕН -->
+    <Group Name="ЕН-11" Code="04.03.01" Years="1" FacultyName="ФЕН" DepCode="4" AddDepCode="" NumberOfStudents="18" Direction="Теоретическая и экспериментальная химия"/>
+    <Group Name="ЕН-21" Code="04.03.01" Years="2" FacultyName="ФЕН" DepCode="4" AddDepCode="" NumberOfStudents="22" Direction="Теоретическая и экспериментальная химия"/>
+    <Group Name="ЕН-31" Code="04.03.01" Years="3" FacultyName="ФЕН" DepCode="4" AddDepCode="" NumberOfStudents="22" Direction="Теоретическая и экспериментальная химия"/>
+    <Group Name="ЕН-41" Code="04.03.01" Years="4" FacultyName="ФЕН" DepCode="4" AddDepCode="" NumberOfStudents="18" Direction="Теоретическая и экспериментальная химия"/>
+
+    <Group Name="ЕН-12" Code="04.03.01" Years="1" FacultyName="ФЕН" DepCode="4" AddDepCode="" NumberOfStudents="17" Direction="Теоретическая и экспериментальная химия"/>
+    <Group Name="ЕН-22" Code="04.03.01" Years="2" FacultyName="ФЕН" DepCode="4" AddDepCode="" NumberOfStudents="22" Direction="Теоретическая и экспериментальная химия"/>
+    <Group Name="ЕН-32" Code="04.03.01" Years="3" FacultyName="ФЕН" DepCode="4" AddDepCode="" NumberOfStudents="26" Direction="Теоретическая и экспериментальная химия"/>
+    <Group Name="ЕН-42" Code="04.03.01" Years="4" FacultyName="ФЕН" DepCode="4" AddDepCode="" NumberOfStudents="16" Direction="Теоретическая и экспериментальная химия"/>
+
+    <!-- ИПУР -->
+    <Group Name="ПР-10" Code="18.03.01" Years="1" FacultyName="ИПУР" DepCode="60" AddDepCode="" NumberOfStudents="26" Direction="Химическая технология биоматериалов"/>
+    <Group Name="ПР-20" Code="18.03.01" Years="2" FacultyName="ИПУР" DepCode="60" AddDepCode="" NumberOfStudents="29" Direction="Химическая технология биоматериалов"/>
+    <Group Name="ПР-30" Code="18.03.01" Years="3" FacultyName="ИПУР" DepCode="60" AddDepCode="" NumberOfStudents="26" Direction="Химическая технология биоматериалов"/>
+    <Group Name="ПР-40" Code="18.03.01" Years="4" FacultyName="ИПУР" DepCode="60" AddDepCode="" NumberOfStudents="23" Direction="Химическая технология биоматериалов"/>
+
+    <Group Name="ПР-11" Code="05.03.06" Years="1" FacultyName="ИПУР" DepCode="57" AddDepCode="" NumberOfStudents="36" Direction="Современные технологии природопользования для устойчивого развития"/>
+    <Group Name="ПР-21" Code="05.03.06" Years="2" FacultyName="ИПУР" DepCode="57" AddDepCode="" NumberOfStudents="23" Direction="Современные технологии природопользования для устойчивого развития"/>
+    <Group Name="ПР-31" Code="05.03.06" Years="3" FacultyName="ИПУР" DepCode="57" AddDepCode="" NumberOfStudents="11" Direction="Современные технологии природопользования для устойчивого развития"/>
+    <Group Name="ПР-41" Code="05.03.06" Years="4" FacultyName="ИПУР" DepCode="57" AddDepCode="" NumberOfStudents="13" Direction="Современные технологии природопользования для устойчивого развития"/>
+
+    <Group Name="ПР-12" Code="05.03.06" Years="1" FacultyName="ИПУР" DepCode="57" AddDepCode="" NumberOfStudents="34" Direction="Современные технологии природопользования для устойчивого развития"/>
+    <Group Name="ПР-22" Code="05.03.06" Years="2" FacultyName="ИПУР" DepCode="57" AddDepCode="" NumberOfStudents="24" Direction="Современные технологии природопользования для устойчивого развития"/>
+    <Group Name="ПР-32" Code="05.03.06" Years="3" FacultyName="ИПУР" DepCode="57" AddDepCode="" NumberOfStudents="9" Direction="Современные технологии природопользования для устойчивого развития"/>
+    <Group Name="ПР-42" Code="05.03.06" Years="4" FacultyName="ИПУР" DepCode="57" AddDepCode="" NumberOfStudents="14" Direction="Современные технологии природопользования для устойчивого развития"/>
+
+    <Group Name="ПР-14" Code="04.03.01" Years="1" FacultyName="ИПУР" DepCode="63" AddDepCode="" NumberOfStudents="16" Direction="Материалы для генерации, преобразования и хранения энергии"/>
+    <Group Name="ПР-24" Code="04.03.01" Years="2" FacultyName="ИПУР" DepCode="63" AddDepCode="" NumberOfStudents="13" Direction="Органические и гибридные материалы для преобразования и запасания энергии"/>
+    <Group Name="ПР-34" Code="04.03.01" Years="3" FacultyName="ИПУР" DepCode="63" AddDepCode="" NumberOfStudents="12" Direction="Органические и гибридные материалы для преобразования и запасания энергии"/>
+    <Group Name="ПР-44" Code="04.03.01" Years="4" FacultyName="ИПУР" DepCode="63" AddDepCode="" NumberOfStudents="13" Direction="Органические и гибридные материалы для преобразования и запасания энергии"/>
+
+    <!-- ГФ -->
+    <Group Name="ЭК-11" Code="38.03.02" Years="1" FacultyName="ГФ" DepCode="50" AddDepCode="" NumberOfStudents="17" Direction="Менеджмент организации"/>
+    <Group Name="ЭК-21" Code="38.03.02" Years="2" FacultyName="ГФ" DepCode="50" AddDepCode="" NumberOfStudents="11" Direction="Производственный менеджмент"/>
+    <Group Name="ЭК-31" Code="38.03.02" Years="3" FacultyName="ГФ" DepCode="50" AddDepCode="" NumberOfStudents="16" Direction="Маркетинг"/>
+    <Group Name="ЭК-41" Code="38.03.02" Years="4" FacultyName="ГФ" DepCode="50" AddDepCode="" NumberOfStudents="5" Direction="Производственный менеджмент"/>
+
+    <Group Name="ЭК-13" Code="38.03.02" Years="1" FacultyName="ГФ" DepCode="50" AddDepCode="" NumberOfStudents="19" Direction="Маркетинг"/>
+    <!--<Group Name="ЭК-23" Code="38.03.02" Years="2" FacultyName="ГФ" DepCode="50" AddDepCode="" NumberOfStudents="0" Direction="Маркетинг"/>-->
+    <Group Name="ЭК-43" Code="38.03.02" Years="4" FacultyName="ГФ" DepCode="50" AddDepCode="" NumberOfStudents="12" Direction="Маркетинг"/>
+</EducationalGroups>

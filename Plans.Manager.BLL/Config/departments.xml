@@ -1,0 +1,85 @@
+﻿<DepNames DateOfCreation="12/04/2022 02:05:10" HashCode="53C4769937FF978F5D1DE07669B7D01E">
+    <Department DepCode="1" DepName="Органической химии"/>
+    <Department DepCode="2" DepName="Физики"/>
+    <Department DepCode="3" DepName="Физической химии"/>
+    <Department DepCode="4" DepName="Общей и неорганической химии"/>
+    <Department DepCode="5" DepName="Аналитической химии"/>
+    <Department DepCode="6" DepName="Коллоидной химии"/>
+    <Department DepCode="7" DepName="Квантовой химии"/>
+    <Department DepCode="8" DepName="Высшей математики"/>
+    <Department DepCode="9" DepName="Иностранных языков"/>
+    <Department DepCode="10" DepName="Общей химической технологии"/>
+    <Department DepCode="11" DepName="Процессов и аппаратов химической технологии"/>
+    <Department DepCode="12" DepName="Электротехники и электроники (реорганизована)"/>
+    <Department DepCode="13" DepName="Механики (реорганизована)"/>
+    <Department DepCode="14" DepName="Стандартизации и иинжерно-компьютерной графики (реорганизована)"/>
+    <Department DepCode="15" DepName="Мембранной технологии"/>
+    <Department DepCode="16" DepName="Истории и политологии"/>
+    <Department DepCode="17" DepName="Философии"/>
+    <Department DepCode="18" DepName="Психологии (реорганизована)"/>
+    <Department DepCode="19" DepName="Русского языка"/>
+    <Department DepCode="20" DepName="Физического воспитания"/>
+    <Department DepCode="21" DepName="Общей технологии силикатов"/>
+    <Department DepCode="22" DepName="Химической технологии стекла и ситаллов"/>
+    <Department DepCode="23" DepName="Химической технологии керамики и огнеупоров"/>
+    <Department DepCode="24" DepName="Химической технологии композиционных и вяжущих материалов"/>
+    <Department DepCode="25" DepName="Химии высоких энергий и радиоэкологии"/>
+    <Department DepCode="26" DepName="Технологии редких элементов и наноматериалов на их основе"/>
+    <Department DepCode="27" DepName="Технологии изотопов и водородной энергетики"/>
+    <Department DepCode="28" DepName="Наноматериалов и нанотехнологии"/>
+    <Department DepCode="29" DepName="Технологии неорганических веществ и электрохимических процессов"/>
+    <Department DepCode="30" DepName="Химии и технологии кристаллов"/>
+    <Department DepCode="31" DepName="Химии и технологии органического синтеза"/>
+    <Department DepCode="32" DepName="Технологии химико-фармацевтических и косметических средств"/>
+    <Department DepCode="33" DepName="Химической технологии углеродных материалов (реорганизована)"/>
+    <Department DepCode="34" DepName="Химии и технологии биомедицинских препаратов"/>
+    <Department DepCode="35" DepName="Химической технологии основного органического и нефтехимического синтеза"/>
+    <Department DepCode="36" DepName="Технологии тонкого органического синтеза и химии красителей"/>
+    <Department DepCode="37" DepName="Экспертизы в допинг- и наркоконтроле"/>
+    <Department DepCode="38" DepName="Химической технологии полимерных композиционных лакокрасочных материалов и покрытий"/>
+    <Department DepCode="39" DepName="Химической технологии пластических масс"/>
+    <Department DepCode="40" DepName="Технологии переработки пластмасс"/>
+    <Department DepCode="41" DepName="Химии и технологии органических соединений азота"/>
+    <Department DepCode="42" DepName="Химии и технологии высокомолекулярных соединений"/>
+    <Department DepCode="43" DepName="Техносферной безопасности"/>
+    <Department DepCode="44" DepName="Кибернетики химико-технологических процессов"/>
+    <Department DepCode="45" DepName="Компьютерно-интегрированных систем в химической технологии (реорганизована)"/>
+    <Department DepCode="46" DepName="Информационных компьютерных технологий"/>
+    <Department DepCode="47" DepName="Биотехнологии"/>
+    <Department DepCode="48" DepName="Промышленной экологии"/>
+    <Department DepCode="49" DepName="Экономической теории (реорганизована)"/>
+    <Department DepCode="50" DepName="Менеджмента и маркетинга"/>
+    <Department DepCode="51" DepName="Гражданского, авторского и экологического права (реорганизована)"/>
+    <Department DepCode="52" DepName="Криминалистики и уголовного права (реорганизована)"/>
+    <Department DepCode="53" DepName="Государственно-правовых дисциплин (реорганизована)"/>
+    <Department DepCode="54" DepName="Логистики и экономической информатики"/>
+    <Department DepCode="55" DepName="Информатики и компьютерного проектирования"/>
+    <Department DepCode="56" DepName="Экологии мегаполисов (реорганизована)"/>
+    <Department DepCode="57" DepName="ЮНЕСКО &quot;Зелёная химия для устойчивого развития&quot;"/>
+    <Department DepCode="58" DepName="Социологии (реорганизована)"/>
+    <Department DepCode="59" DepName="Инновационных материалов и защиты от коррозии"/>
+    <Department DepCode="60" DepName="Биоматериалов"/>
+    <Department DepCode="61" DepName="Высший химический колледж Российской академии наук"/>
+    <Department DepCode="62" DepName="Инженерного проектирования технологического оборудования"/>
+    <Department DepCode="63" DepName="Сколтеха &quot;Органические и гибридные материалы для преобразования и запасания энергии&quot;"/>
+    <Department DepCode="64" DepName="Международный учебно-научный центр трансфера фармацевтических и биотехнологий (реорганизована)"/>
+    <Department DepCode="65" DepName="Социологии, психологии и права"/>
+    <Department DepCode="66" DepName="Химического и фармацевтического инжиниринга"/>
+    <Department DepCode="67" DepName="Научно-образовательная лаборатория &quot;Электроактивные материалы и химические источники тока&quot;"/>
+    <Department DepCode="68" DepName="Центр цифровой трансформации"/>
+    <Department DepCode="69" DepName="Центр исследований и разработок ЮМАТЕКС-РХТУ"/>
+    <Department DepCode="70" DepName="Химической технологии природных энергоносителей и углеродных материалов"/>
+    <Department DepCode="71" DepName="Передовая инженерная школа Химического инжиниринга и машиностроения"/>
+    <Department DepCode="72" DepName="Центр химического машиностроения"/>
+    <Department DepCode="73" DepName="Кафедра химической технологии основного органического и нефтехимического синтеза (трек ПИШ ХИМ)"/>
+    <Department DepCode="74" DepName="Кафедра технологии переработки пластмасс (трек ПИШ ХИМ)"/>
+    <Department DepCode="75" DepName="Кафедра химической технологии полимерных композиционных лакокрасочных материалов и покрытий (трек .."/>
+    <Department DepCode="76" DepName="Кафедра химической технологии пластических масс (трек ПИШ ХИМ)"/>
+    <Department DepCode="77" DepName="Кафедра химической технологии природных энергоносителей и углеродных материалов (трек ПИШ ХИМ)"/>
+    <Department DepCode="78" DepName="Кафедра технологии тонкого органического синтеза и химии красителей (трек ПИШ ХИМ)"/>
+    <Department DepCode="79" DepName="НИУ ИТМО (открытое образование)"/>
+    <Department DepCode="80" DepName="Политех (открытое образование)"/>
+    <Department DepCode="81" DepName="УрФУ (открытое образование)"/>
+    <Department DepCode="82" DepName="НИУ ВШЭ (открытое образование)"/>
+    <Department DepCode="83" DepName="МГУ (открытое образование)"/>
+</DepNames>
