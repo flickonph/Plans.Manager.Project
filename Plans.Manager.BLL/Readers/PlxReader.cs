@@ -136,25 +136,6 @@ public class PlanData
         var parentCodes = match.Select(x => x.ParentCode).Distinct().ToList();
         if (match.Count != 0 && unify)
         {
-            /*foreach (var parentCode in parentCodes)
-            {
-                var newDiscipline = match.First(x => x.ParentCode == parentCode);
-                foreach (var disc in match.Where(x => x.ParentCode == parentCode))
-                {
-                    if (unifiedName == string.Empty)
-                    {
-                        unifiedName = disc.Name;
-                    }
-                    else
-                    {
-                        unifiedName += "/" + disc.Name;
-                    }
-                }
-                newDiscipline.Name = unifiedName;
-                Disciplines.RemoveAll(x => x.ParentCode == parentCode);
-                Disciplines.RemoveAll(x => x.OwnCode == parentCode);
-                Disciplines.Add(newDiscipline);
-            }*/
             for (int i = 0; i < parentCodes.Count; i++)
             {
                 var matchingCodeDisciplines = match.Where(discipline => discipline.ParentCode == parentCodes[i]).ToList();
@@ -186,16 +167,17 @@ public class PlanData
         foreach (var discipline in Disciplines)
         {
             var sortedData = new List<DisciplineData>();
-            foreach (var dictionary in discipline.DisciplineData)
+            foreach (var disciplineData in discipline.DisciplineData)
             {
-                string[] firstMatch =
+                string[] controlTypeVariants =
                 {
                     "Зачет",
                     "Зачет с оценкой",
                     "Экзамен",
-                    "Курсовой проект"
+                    "Курсовой проект",
+                    "Курсовая работа"
                 };
-                string[] secondMatch =
+                string[] hoursTypeVariants =
                 {
                     "Лекционные занятия",
                     "Лабораторные занятия",
@@ -203,17 +185,16 @@ public class PlanData
                     "Семинарские занятия"
                 };
 
-                if (firstMatch.Contains(dictionary.Type) &&
-                    dictionary.Hours != 0 &&
-                    dictionary.Course != 0 &&
-                    dictionary.Semester != 0) // TODO: Remove magical number
-                    sortedData.Add(dictionary);
-                else if (secondMatch.Contains(dictionary.Type) &&
-                         dictionary.Hours > 2.0 &&
-                         dictionary.Hours != 0 &&
-                         dictionary.Course != 0 &&
-                         dictionary.Semester != 0) // TODO: Remove magical number
-                    sortedData.Add(dictionary);
+                if (controlTypeVariants.Contains(disciplineData.Type) &&
+                    disciplineData.Hours != 0 &&
+                    disciplineData.Course != 0 &&
+                    disciplineData.Semester != 0) // TODO: Remove magical number
+                    sortedData.Add(disciplineData);
+                else if (hoursTypeVariants.Contains(disciplineData.Type) &&
+                         disciplineData.Hours >= 4.0 &&
+                         disciplineData.Course != 0 &&
+                         disciplineData.Semester != 0) // TODO: Remove magical number
+                    sortedData.Add(disciplineData);
             }
 
             discipline.DisciplineData = sortedData;
@@ -222,10 +203,11 @@ public class PlanData
         Disciplines = Disciplines.Where(d => d.DisciplineData.Count > 0).ToList();
         Disciplines = Disciplines.Where(
                 discipline => discipline.DisciplineData.Where(
-                    dict => 
-                        dict.Type is "Лекционные занятия" or "Лабораторные занятия" or "Практические занятия" or "Семинарские занятия")
+                    disciplineData => 
+                        disciplineData.Type is "Лекционные занятия" or "Лабораторные занятия" or "Практические занятия" or "Семинарские занятия")
                     .ToList().Count > 0)
             .ToList();
+        Disciplines = Disciplines.Where(d => d.DisciplineData.Count > 0).ToList();
     }
 }
 

@@ -185,18 +185,17 @@ public partial class ExcelHandler
             case "Экзамен":
                 groupWorksheet.Cells[line, 7 + weeks * 3 + 1].Value = disciplineControlTypeMatch.Hours;
                 break;
+            case "Курсовая работа":
+                groupWorksheet.Cells[line, 7 + weeks * 3 + 2].Value = disciplineControlTypeMatch.Hours;
+                break;
+            case "Курсовой проект":
+                groupWorksheet.Cells[line, 7 + weeks * 3 + 2].Value = disciplineControlTypeMatch.Hours;
+                break;
             case "Ошибка":
-                groupWorksheet.Cells[line, 7 + weeks * 3].Value = 0;
-                groupWorksheet.Cells[line, 7 + weeks * 3 + 1].Value = 0;
-                groupWorksheet.Cells[line, 7 + weeks * 3 + 2].Value = 0;
                 groupWorksheet.Cells[line, 7 + weeks * 3 + 3].Value = "Нет данных";
-                groupWorksheet.Cells[line, 7 + weeks * 3, line, 7 + weeks * 3 + 3].Style.Fill.SetBackground(Color.Red);
+                groupWorksheet.Cells[line, 7 + weeks * 3 + 3].Style.Fill.SetBackground(Color.Red);
                 break;
         }
-
-        var courseWork =
-            discipline.DisciplineData.Find(disciplineData => disciplineData.Type is "Курсовая работа" or "Курсовой проект")?.Hours ?? 0;
-        if (courseWork != 0) groupWorksheet.Cells[line, 7 + weeks * 3 + 2].Value = courseWork;
     }
 
     private static void FillHours(ExcelWorksheet groupWorksheet, Discipline discipline, int weeks, int line)
