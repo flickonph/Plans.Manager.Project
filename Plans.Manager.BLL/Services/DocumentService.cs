@@ -38,7 +38,9 @@ public static class DocumentService
         var excelHandler = new ExcelHandler(plxFiles, year);
         var loadPackage = excelHandler.StudyLoad(semester);
         var excelFileInfo = new FileInfo($@"{dirToSave}\Кафедральная нагрузка({semester} сем.) {year}.xlsx");
-
+        if (loadPackage.Workbook.Worksheets.Count == 0)
+            return true;
+        
         switch (excelFileInfo.Exists)
         {
             case true:
@@ -47,7 +49,7 @@ public static class DocumentService
                     File.Delete(excelFileInfo.FullName);
                     loadPackage.SaveAs(excelFileInfo);
                     loadPackage.Dispose();
-                    return excelFileInfo.Exists;
+                    return true;
                 }
                 catch
                 {
@@ -58,10 +60,8 @@ public static class DocumentService
             default:
                 loadPackage.SaveAs(excelFileInfo);
                 loadPackage.Dispose();
-                break;
+                return true;
         }
-
-        return excelFileInfo.Exists;
     }
     
     public static bool CreateAndSaveDepartments(string path)

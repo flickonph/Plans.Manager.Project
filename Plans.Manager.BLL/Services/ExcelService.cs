@@ -11,7 +11,7 @@ public partial class ExcelHandler
     private readonly List<PlanGroupsPair> _plansGroupsPairs;
     private readonly int _studyYear;
     private static readonly List<string> AutoCompleteDisciplines = ConfigReader.GetAutoCompleteDisciplines();
-    private static readonly string[] DisciplineControlType = { "Зачет", "Зачет с оценкой", "Экзамен", "Курсовая работа" };
+    private static readonly string[] DisciplineControlType = { "Зачет", "Зачет с оценкой", "Экзамен", "Курсовая работа", "Курсовой проект" };
 
     public ExcelHandler(List<string> plxFilesPaths, int studyYear)
     {
@@ -195,7 +195,7 @@ public partial class ExcelHandler
         }
 
         var courseWork =
-            discipline.DisciplineData.Find(disciplineData => disciplineData.Type == "Курсовая работа")?.Hours ?? 0;
+            discipline.DisciplineData.Find(disciplineData => disciplineData.Type is "Курсовая работа" or "Курсовой проект")?.Hours ?? 0;
         if (courseWork != 0) groupWorksheet.Cells[line, 7 + weeks * 3 + 2].Value = courseWork;
     }
 

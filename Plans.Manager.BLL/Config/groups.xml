@@ -38,7 +38,7 @@
     <Group Name="Н-18" Code="15.03.02" Years="1" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="24" NumberOfStudents="15" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
     <Group Name="Н-28" Code="15.03.02" Years="2" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="24" NumberOfStudents="22" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
     <Group Name="Н-38" Code="15.03.02" Years="3" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="" NumberOfStudents="12" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
-    <Group Name="Н-39" Code="15.03.02" Years="3" FacultyName="ТНВиВМ" DepCode="24" AddDepCode="" NumberOfStudents="12" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
+    <Group Name="Н-39" Code="15.03.02" Years="3" FacultyName="ТНВиВМ" DepCode="24" AddDepCode="" NumberOfStudents="12" Direction="вяж"/>
     <Group Name="Н-48" Code="15.03.02" Years="4" FacultyName="ТНВиВМ" DepCode="23" AddDepCode="24" NumberOfStudents="18" Direction="Технологические машины и оборудование производства высокотемпературных функциональных материалов"/>
 
     <Group Name="Н-10" Code="22.03.01" Years="1" FacultyName="ТНВиВМ" DepCode="30" AddDepCode="" NumberOfStudents="24" Direction="Материаловедение для фотоники и электроники"/>
