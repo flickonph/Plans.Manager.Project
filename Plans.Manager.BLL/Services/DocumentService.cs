@@ -1,75 +1,92 @@
+using System.Xml;
+using OfficeOpenXml;
+using Plans.Manager.BLL.Builders;
+using Plans.Manager.BLL.Readers;
+
 namespace Plans.Manager.BLL.Services;
 
 public static class DocumentService
 {
-    public static bool CreateAndSavePlan(List<string> plxFiles, int course, int semester, int weeks, int year, string dirToSave)
+    public static bool CreateAndSavePlan(List<string> plxFilesPaths, int selectedCourse, int selectedSemester, int selectedWeeks, int selectedYear, string dirToSave)
     {
-        var excelHandler = new ExcelHandler(plxFiles, year);
-        var plansPackage = excelHandler.PlansPackage(course, semester, weeks, year);
-        var excelFileInfo = new FileInfo($@"{dirToSave}\РП {course}к.({(course * 2 - 2) + semester} сем.) {year}.xlsx");
-        if (plansPackage.Workbook.Worksheets.Count == 0)
-            return true;
+        bool status = true;
+        PlanBuilder planBuilder = new PlanBuilder(plxFilesPaths, selectedYear);
+        ExcelPackage planPackage = planBuilder.PlansExcelPackage(selectedCourse, selectedSemester, selectedWeeks);
+        FileInfo planFileInfo = new FileInfo($@"{dirToSave}\РП {selectedCourse}к.({(selectedCourse * 2 - 2) + selectedSemester} сем.) {selectedYear}.xlsx");
+        if (planPackage.Workbook.Worksheets.Count == 0)
+            return false;
 
-        switch (excelFileInfo.Exists)
+        switch (planFileInfo.Exists)
         {
             case true:
                 try
                 {
-                    File.Delete(excelFileInfo.FullName);
-                    plansPackage.SaveAs(excelFileInfo);
-                    plansPackage.Dispose();
-                    return true;
+                    File.Delete(planFileInfo.FullName);
+                    planPackage.SaveAs(planFileInfo);
+                    planPackage.Dispose();
                 }
                 catch
                 {
-                    plansPackage.Dispose();
-                    return false;
+                    planPackage.Dispose();
+                    status = false;
                 }
+                
+                break;
 
             default:
-                plansPackage.SaveAs(excelFileInfo);
-                plansPackage.Dispose();
-                return true;
+                planPackage.SaveAs(planFileInfo);
+                planPackage.Dispose();
+                break;
         }
+
+        return status;
     }
 
-    public static bool CreateAndSaveLoad(List<string> plxFiles, int semester, int year, string dirToSave)
+    public static bool CreateAndSaveLoad(List<string> plxFilesPaths, int selectedSemester, int selectedYear, string dirToSave)
     {
-        var excelHandler = new ExcelHandler(plxFiles, year);
-        var loadPackage = excelHandler.StudyLoad(semester);
-        var excelFileInfo = new FileInfo($@"{dirToSave}\Кафедральная нагрузка({semester} сем.) {year}.xlsx");
-        if (loadPackage.Workbook.Worksheets.Count == 0)
-            return true;
-        
-        switch (excelFileInfo.Exists)
+        bool status = true;
+        LoadBuilder loadBuilder = new LoadBuilder(plxFilesPaths, selectedYear, selectedSemester);
+        List<ExcelPackage> loadPackages = loadBuilder.LoadExcelPackages();
+        Directory.CreateDirectory($@"{dirToSave}\{selectedYear}");
+        foreach (ExcelPackage loadPackage in loadPackages)
         {
-            case true:
-                try
-                {
-                    File.Delete(excelFileInfo.FullName);
-                    loadPackage.SaveAs(excelFileInfo);
-                    loadPackage.Dispose();
-                    return true;
-                }
-                catch
-                {
-                    loadPackage.Dispose();
-                    return false;
-                }
+            if (loadPackage.Workbook.Worksheets.Count == 0)
+                continue;
+        
+            FileInfo loadFileInfo = new FileInfo($@"{dirToSave}\{selectedYear}\{loadPackage.Workbook.Properties.Comments}.xlsx");
+            switch (loadFileInfo.Exists)
+            {
+                case true:
+                    try
+                    {
+                        File.Delete(loadFileInfo.FullName);
+                        loadPackage.SaveAs(loadFileInfo);
+                        loadPackage.Dispose();
+                    }
+                    catch
+                    {
+                        loadPackage.Dispose();
+                        status = false;
+                    }
 
-            default:
-                loadPackage.SaveAs(excelFileInfo);
-                loadPackage.Dispose();
-                return true;
+                    break;
+
+                default:
+                    loadPackage.SaveAs(loadFileInfo);
+                    loadPackage.Dispose();
+                    break;
+            }
         }
+
+        return status;
     }
     
     public static bool CreateAndSaveDepartments(string path)
     {
-        var datHandler = new DatHandler(path);
-        const string fileName = @"Config\departments.xml";
-        var currentFile = new FileInfo(fileName);
-        var xmlDocument = datHandler.DatToXml();
+        DatReader datReader = new DatReader(path);
+        const string fileName = @"Config\Departments.xml";
+        FileInfo currentFile = new FileInfo(fileName);
+        XmlDocument xmlDocument = datReader.DatToXml();
 
         switch (currentFile.Exists)
         {

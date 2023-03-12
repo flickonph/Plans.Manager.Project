@@ -1,9 +1,10 @@
-﻿using System.Windows;
+﻿using System.Configuration;
+using System.Windows;
 using System.Windows.Media;
-using System.Reflection;
 using Plans.Manager.Desktop.Views.Pages;
 using Wpf.Ui.Appearance;
 using Wpf.Ui.Controls;
+using Wpf.Ui.Controls.Window;
 
 namespace Plans.Manager.Desktop;
 
@@ -16,13 +17,40 @@ public partial class MainWindow
         Watcher.Watch(this);
 
         InitializeComponent();
-
-        Loaded += (_, _) => RootNavigation.Navigate(typeof(MainPage));
+        Loaded += (_, _) =>
+        {
+            Watcher.Watch(
+                this,
+                WindowBackdropType.Mica,
+                true
+            );
+            RootNavigation.Navigate(typeof(MainPage));
+            SetDefaultTheme_OnLoad();
+        };
     }
-    
-    private static string GetAssemblyVersion()
+
+    private static void SetDefaultTheme_OnLoad()
     {
-        return Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? string.Empty;
+        string? themeValue = ConfigurationManager.AppSettings.Get("Theme");
+        switch (themeValue)
+        {
+            case "Dark":
+                Theme.Apply(ThemeType.Dark);
+                break;
+            case "Light":
+                Theme.Apply(ThemeType.Light);
+                break;
+            default:
+                if (Theme.GetSystemTheme() == SystemThemeType.Dark)
+                {
+                    Theme.Apply(ThemeType.Dark);
+                }
+                else if (Theme.GetSystemTheme() == SystemThemeType.Light)
+                {
+                    Theme.Apply(ThemeType.Light);
+                }
+                break;
+        }
     }
 
     private void ThemeButton_OnClick(object sender, RoutedEventArgs e)

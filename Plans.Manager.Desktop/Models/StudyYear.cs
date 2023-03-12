@@ -6,8 +6,8 @@ public static class StudyYear
 {
 	public static int CurrentStudyYear()
 	{
-		var date = DateTime.Now;
-		var currentYear = date.Year;
+		DateTime date = DateTime.Now;
+		int currentYear = date.Year;
 		if(date.Month <= 8)
 			currentYear--;
 		return currentYear;

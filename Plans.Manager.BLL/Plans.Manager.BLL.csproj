@@ -26,19 +26,21 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="Config\auto_disciplines.xml">
+      <Content Include="Config\Departments.xml">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
-      <Content Include="Config\connection_string.xml">
+      <Content Include="Config\Groups.xml">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
-      <Content Include="Config\departments.xml">
+      <Content Include="Config\Settings.xml">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
-      <Content Include="Config\groups.xml">
+      <None Remove="Config\AutoComplete.xml" />
+      <Content Include="Config\AutoComplete.xml">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
-      <Content Include="Config\settings.xml">
+      <None Remove="Config\ConnectionString.xml" />
+      <Content Include="Config\ConnectionString.xml">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
     </ItemGroup>

@@ -19,7 +19,7 @@
             VerticalAlignment="Stretch">
             <StackPanel>
                 <TextBlock
-                FontSize="16"
+                    FontSize="20"
                 Margin="0,0,0,5"
                 Text="Рабочие учебные планы" />
                 <Grid>
@@ -62,7 +62,7 @@
             </StackPanel>
             <StackPanel>
                 <TextBlock
-                    FontSize="16"
+                    FontSize="20"
                     Margin="0,0,0,5"
                     Text="Кафедральная нагрузка" />
                 <Grid>
@@ -100,7 +100,7 @@
             </StackPanel>
             <StackPanel>
                 <TextBlock
-                    FontSize="16"
+                    FontSize="20"
                     Margin="0,0,0,5"
                     Text="Справочники" />
                 <Grid>

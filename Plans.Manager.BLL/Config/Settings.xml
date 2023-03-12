@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths
+    AutoComplete="Config\AutoComplete.xml" 
+    Departments="Config\Departments.xml" 
+    Groups="Config\Groups.xml" 
+    ConnectionString="Config\ConnectionString.xml"/>

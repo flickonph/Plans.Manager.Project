@@ -10,6 +10,7 @@ using Plans.Manager.Desktop.Views.Windows;
 using Wpf.Ui.Appearance;
 using Wpf.Ui.Common;
 using Wpf.Ui.Controls;
+using MessageBox = Wpf.Ui.Controls.MessageBox;
 
 namespace Plans.Manager.Desktop.Views.Pages;
 
@@ -29,28 +30,28 @@ public partial class MainPage
     {
         CreatePlansButton.IsEnabled = false;
         
-        var dirToSave = WindowsApi.SelectFolder("Выберите папку для сохранения рабочих планов");
+        string dirToSave = WindowsApi.SelectFolder("Выберите папку для сохранения рабочих планов");
         if (string.IsNullOrEmpty(dirToSave))
         {
-            var messageBox = MessageBox(string.Empty, "Папка не указана", string.Empty);
+            MessageBox messageBox = MessageBox(string.Empty, "Папка не указана", string.Empty);
             messageBox.ButtonLeftClick += (_, _) => messageBox.Close();
             messageBox.ShowDialog();
             CreatePlansButton.IsEnabled = true;
             return;
         }
 
-        var plansOptionsWindow = new PlansOptionsWindow();
-        var dialog = plansOptionsWindow.ShowDialog();
+        PlansOptionsWindow plansOptionsWindow = new PlansOptionsWindow();
+        bool? dialog = plansOptionsWindow.ShowDialog();
         if (dialog is null or false)
         {
-            var messageBox = MessageBox(string.Empty, "Опции не выбраны", string.Empty);
+            MessageBox messageBox = MessageBox(string.Empty, "Опции не выбраны", string.Empty);
             messageBox.ButtonLeftClick += (_, _) => messageBox.Close();
             messageBox.ShowDialog();
             CreatePlansButton.IsEnabled = true;
             return;
         }
 
-        var result = false;
+        bool result = false;
         string parentDir = WindowsApi.SelectFolder("Выберите корневую папку с исходными учебными планами");
         List<string> plxFilesPaths = new List<string>();
         
@@ -74,7 +75,7 @@ public partial class MainPage
                 return;
         }
         
-        for (var course = 1; course <= 6; course++)
+        for (int course = 1; course <= 6; course++)
         {
             result = await Task.Factory.StartNew(()
                 => DocumentService.CreateAndSavePlan(
@@ -105,17 +106,17 @@ public partial class MainPage
     {
         CreateLoadButton.IsEnabled = false;
         
-        var dirToSave = WindowsApi.SelectFolder("Выберите папку для сохранения кафедральной нагрузки");
+        string dirToSave = WindowsApi.SelectFolder("Выберите папку для сохранения кафедральной нагрузки");
         if (string.IsNullOrEmpty(dirToSave))
         {
-            var messageBox = MessageBox(string.Empty, "Папка не указана", string.Empty);
+            MessageBox messageBox = MessageBox(string.Empty, "Папка не указана", string.Empty);
             messageBox.ButtonLeftClick += (_, _) => messageBox.Close();
             messageBox.ShowDialog();
             CreateLoadButton.IsEnabled = true;
             return;
         }
 
-        var loadOptionsWindow = new PlansOptionsWindow();
+        PlansOptionsWindow loadOptionsWindow = new PlansOptionsWindow();
         loadOptionsWindow.WeeksNumberBox.IsEnabled = false;
         loadOptionsWindow.WeeksTextBlock.IsEnabled = false;
         loadOptionsWindow.TitleBar.Title = "Опции для составления кафедральной нагрузки";
@@ -123,10 +124,10 @@ public partial class MainPage
         loadOptionsWindow.DefaultCardActionAdditionalTextBlock.Text = "Нагрузка составляется с учётом заданных опций";
         loadOptionsWindow.TypeTextBlock.Text = "Тип кафедральной нагрузки";
 
-        var dialog = loadOptionsWindow.ShowDialog();
+        bool? dialog = loadOptionsWindow.ShowDialog();
         if (dialog is null or false)
         {
-            var messageBox = MessageBox(string.Empty, "Опции не выбраны", string.Empty);
+            MessageBox messageBox = MessageBox(string.Empty, "Опции не выбраны", string.Empty);
             messageBox.ButtonLeftClick += (_, _) => messageBox.Close();
             messageBox.ShowDialog();
             CreateLoadButton.IsEnabled = true;
@@ -156,7 +157,7 @@ public partial class MainPage
                 return;
         }
         
-        var result = await Task.Factory.StartNew(()
+        bool result = await Task.Factory.StartNew(()
             => DocumentService.CreateAndSaveLoad(
                 plxFilesPaths,
                 (int)loadOptionsWindow.Semester,
@@ -181,16 +182,16 @@ public partial class MainPage
     private async void CreateDepartments(object sender, RoutedEventArgs e)
     {
         const string dirToSave = @"Config";
-        var pathToFile = WindowsApi.SelectFile("dat");
+        string pathToFile = WindowsApi.SelectFile("dat");
         if (pathToFile == string.Empty)
         {
-            var messageBox = MessageBox(string.Empty, "Папка не указана.", string.Empty);
+            MessageBox messageBox = MessageBox(string.Empty, "Папка не указана.", string.Empty);
             messageBox.ButtonLeftClick += (_, _) => messageBox.Close();
             messageBox.ShowDialog();
             return;
         }
 
-        var result = await Task.Factory.StartNew(() => DocumentService.CreateAndSaveDepartments(pathToFile))
+        bool result = await Task.Factory.StartNew(() => DocumentService.CreateAndSaveDepartments(pathToFile))
             .ConfigureAwait(true);
         if(result)
             Notification("Успешное сохранение",
@@ -204,12 +205,14 @@ public partial class MainPage
 {
     private List<string> DefaultOptionPlxFilesPaths(string parentDir)
     {
-        var result = new List<string>();
-        var parentDirInfo = new DirectoryInfo(parentDir);
+        List<string> result = new List<string>();
+        DirectoryInfo parentDirInfo = new DirectoryInfo(parentDir);
         if (!parentDirInfo.Exists) return result;
         if (parentDirInfo.GetDirectories().Length == 0) return result;
-        foreach (var yearDirInfo in parentDirInfo.GetDirectories())
+        foreach (DirectoryInfo yearDirInfo in parentDirInfo.GetDirectories())
         {
+            if (yearDirInfo.Name is ".git" or ".idea") continue; // TODO: Refactor this method
+            
             int yearDirName;
             try
             {
@@ -222,7 +225,7 @@ public partial class MainPage
             
             if (yearDirName <= _studyYear && yearDirName >= (_studyYear - 3))
             {
-                foreach (var typeDirInfo in yearDirInfo.GetDirectories())
+                foreach (DirectoryInfo typeDirInfo in yearDirInfo.GetDirectories())
                 {
                     switch (typeDirInfo.Name)
                     {
@@ -235,7 +238,7 @@ public partial class MainPage
             
             if (yearDirName <= _studyYear && yearDirName >= (_studyYear - 5))
             {
-                foreach (var typeDirInfo in yearDirInfo.GetDirectories())
+                foreach (DirectoryInfo typeDirInfo in yearDirInfo.GetDirectories())
                 {
                     switch (typeDirInfo.Name)
                     {
@@ -254,11 +257,11 @@ public partial class MainPage
     
     private List<string> AdditionalOptionPlxFilesPaths(string parentDir)
     {
-        var result = new List<string>();
-        var parentDirInfo = new DirectoryInfo(parentDir);
+        List<string> result = new List<string>();
+        DirectoryInfo parentDirInfo = new DirectoryInfo(parentDir);
         if (!parentDirInfo.Exists) return result;
         if (parentDirInfo.GetDirectories().Length == 0) return result;
-        foreach (var yearDirInfo in parentDirInfo.GetDirectories())
+        foreach (DirectoryInfo yearDirInfo in parentDirInfo.GetDirectories())
         {
             int yearDirName;
             try
@@ -272,7 +275,7 @@ public partial class MainPage
             
             if (yearDirName <= (_studyYear) && yearDirName >= (_studyYear - 1))
             {
-                foreach (var typeDirInfo in yearDirInfo.GetDirectories())
+                foreach (DirectoryInfo typeDirInfo in yearDirInfo.GetDirectories())
                 {
                     switch (typeDirInfo.Name)
                     {

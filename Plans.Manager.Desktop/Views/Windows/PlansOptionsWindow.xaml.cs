@@ -80,7 +80,7 @@ public partial class PlansOptionsWindow
 
     private void YearNumberBox_OnValueChanged(object sender, RoutedEventArgs e)
     {
-        var year = Convert.ToInt32(YearNumberBox.Value);
+        int year = Convert.ToInt32(YearNumberBox.Value);
         YearSecondaryTextBlock.Text = $"{year}-{year + 1} гг.";
     }
 }

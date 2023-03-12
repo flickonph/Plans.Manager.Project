@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
+using Plans.Manager.BLL.Objects;
 using Plans.Manager.BLL.Readers;
 using Wpf.Ui.Appearance;
 using Wpf.Ui.Controls;
@@ -17,13 +19,13 @@ public partial class GroupsPage
 
     private void InitGroups()
     {
-        var allGroups = ConfigReader.GetGroups();
-        foreach (var group in allGroups)
+        List<Group> allGroups = XmlReader.GetGroups();
+        foreach (Group group in allGroups)
         {
-            var groupCard = new Card
+            Card groupCard = new Card
             {
                 Content = group.Name,
-                Footer = group.AllData(),
+                Footer = group,
                 FontSize = 12,
             };
             GroupsListBox.Items.Add(groupCard);

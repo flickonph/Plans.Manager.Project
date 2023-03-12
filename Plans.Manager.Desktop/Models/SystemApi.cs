@@ -10,11 +10,11 @@ public static class WindowsApi
 {
     public static string SelectFolder(string description)
     {
-        var dialog = new FolderBrowserDialog();
+        FolderBrowserDialog dialog = new FolderBrowserDialog();
         dialog.Description = description;
         dialog.UseDescriptionForTitle = true;
         dialog.ShowDialog();
-        var path = dialog.SelectedPath;
+        string path = dialog.SelectedPath;
 
         return path;
     }
@@ -32,7 +32,7 @@ public static class WindowsApi
         switch (allInFolder)
         {
             case false:
-                var dialog = new OpenFileDialog
+                OpenFileDialog dialog = new OpenFileDialog
                 {
                     DefaultExt = $".{ext}",
                     Filter = $"{ext.ToUpper()} Files (*.{ext})|*.{ext}",
@@ -46,15 +46,15 @@ public static class WindowsApi
                 break;
 
             case true:
-                var dir = SelectFolder("Выберите файл(ы)");
+                string dir = SelectFolder("Выберите файл(ы)");
                 if (dir == string.Empty)
                 {
                     pathToFiles = Array.Empty<string>();
                     break;
                 }
 
-                var dirInfo = new DirectoryInfo(dir);
-                var fileInfos = dirInfo.GetFiles($"*.{ext}", SearchOption.AllDirectories);
+                DirectoryInfo dirInfo = new DirectoryInfo(dir);
+                FileInfo[] fileInfos = dirInfo.GetFiles($"*.{ext}", SearchOption.AllDirectories);
                 pathToFiles = fileInfos.Select(f => f.FullName);
 
                 break;
@@ -70,7 +70,7 @@ public static class WindowsApi
     /// <returns> Single file path. </returns>
     public static string SelectFile(string ext)
     {
-        var dialog = new OpenFileDialog
+        OpenFileDialog dialog = new OpenFileDialog
         {
             DefaultExt = $".{ext}",
             Filter = $"{ext.ToUpper()} Files (*.{ext})|*.{ext}",
@@ -79,7 +79,7 @@ public static class WindowsApi
         };
 
         dialog.ShowDialog();
-        var pathToFile = dialog.FileName;
+        string pathToFile = dialog.FileName;
 
         return pathToFile;
     }

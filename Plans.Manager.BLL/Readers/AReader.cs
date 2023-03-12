@@ -18,8 +18,8 @@ public abstract class AReader
 
     protected List<XmlElement> GetXmlElements(string xmlElementName)
     {
-        var xmlNodeList = _currentDocument.GetElementsByTagName(xmlElementName);
-        var xmlElements = xmlNodeList.OfType<XmlElement>().ToList();
+        XmlNodeList xmlNodeList = _currentDocument.GetElementsByTagName(xmlElementName);
+        List<XmlElement> xmlElements = xmlNodeList.OfType<XmlElement>().ToList();
         return xmlElements;
     }
 
@@ -35,7 +35,7 @@ public abstract class AReader
 
         if (!File.Exists(_path)) throw new FileNotFoundException("The file does not exist at the current path.");
 
-        var fileInfo = new FileInfo(_path);
+        FileInfo fileInfo = new FileInfo(_path);
 
         if (fileInfo.Extension.ToLower() != $".{_extension}")
             throw new InvalidDataException("The file extension is not correct.");
