@@ -18,11 +18,28 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <ListBox
-            Grid.Row="0"
-            SelectionMode="Multiple"
-            x:Name="GroupsListBox">
-        </ListBox>
+        <ui:Card Grid.Row="0">
+            <ListBox
+                BorderBrush="Red"
+                BorderThickness="10"
+                x:Name="GroupsListBox">
+                <ListBoxItem>
+                    <ui:Card>Группа</ui:Card>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <ui:Card>Группа</ui:Card>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <ui:Card>Группа</ui:Card>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <ui:Card>Группа</ui:Card>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <ui:Card>Группа</ui:Card>
+                </ListBoxItem>
+            </ListBox>
+        </ui:Card>
         <Grid
             Grid.Row="1"
             Margin="0,10,0,0"

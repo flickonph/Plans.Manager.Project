@@ -16,6 +16,8 @@ public abstract class ABuilder
     }
     
     protected static readonly string[] ControlType = { "Зачет", "Зачет с оценкой", "Экзамен", "Курсовая работа", "Курсовой проект" }; // TODO: Move to configuration file instead
+    protected static readonly string[] PrimaryType = { "Зачет", "Зачет с оценкой", "Экзамен" }; // TODO: Move to configuration file instead
+    protected static readonly string[] AdditionalType = { "Курсовая работа", "Курсовой проект" }; // TODO: Move to configuration file instead
 
     protected List<PlanGroupPair> GetAllPlanGroupPairs()
     {

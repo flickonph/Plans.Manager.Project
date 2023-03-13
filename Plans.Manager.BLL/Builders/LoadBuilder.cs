@@ -24,9 +24,10 @@ public class LoadBuilder : ABuilder
 
     public List<ExcelPackage> LoadExcelPackages()
     {
-        return _departments.Select(department => BuildLoadExcelPackage(department)).ToList();
-    } 
-    public ExcelPackage BuildLoadExcelPackage(Department department)
+        return _departments.Select(BuildLoadExcelPackage).ToList();
+    }
+
+    private ExcelPackage BuildLoadExcelPackage(Department department)
     {
         // Package region
         ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
@@ -47,59 +48,67 @@ public class LoadBuilder : ABuilder
         };
 
         // Worksheet creation
-        ExcelWorksheet worksheet = loadPackage.Workbook.Worksheets.Add(department.Code);
-        LoadDecorator.DecorateHeader(worksheet, semesterDescription, department);
+        ExcelWorksheet loadWorksheet = loadPackage.Workbook.Worksheets.Add(department.Code);
+        loadWorksheet.View.ZoomScale = 70;
+        LoadDecorator.DecorateHeader(loadWorksheet, semesterDescription, department);
 
-        int globalCounter = 3;
+        int currentRow = 3;
         foreach (PlanGroupPair planGroupPair in _allPlanGroupPairs)
         {
             foreach (Group educationalGroup in planGroupPair.Groups)
             {
-                int from = globalCounter;
+                int from = currentRow;
                 
                 planGroupPair.Plan.Data.SortByCourseAndSemester(educationalGroup.Years, _selectedSemester, false);
                 List<Discipline> requiredDisciplines =
                     planGroupPair.Plan.Data.Disciplines.Where(discipline => discipline.Department.Code == department.Code).ToList();
                 foreach (Discipline discipline in requiredDisciplines)
                 {
-                    worksheet.Cells[globalCounter, 1].Value = educationalGroup.Name;
-                    worksheet.Cells[globalCounter, 1].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
-                    worksheet.Cells[globalCounter, 1].Style.Fill.SetBackground(Color.LightGray);
+                    loadWorksheet.Cells[currentRow, 1].Value = educationalGroup.Name;
+
+                    loadWorksheet.Cells[currentRow, 2].Value = discipline.Name;
                     
-                    worksheet.Cells[globalCounter, 2].Value = discipline.Name;
-                    worksheet.Cells[globalCounter, 2].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
+                    loadWorksheet.Cells[currentRow, 3].Value = discipline.Data.Find(dictionary => dictionary.Type == "Лекционные занятия")?.Hours ?? 0;
                     
-                    worksheet.Cells[globalCounter, 3].Value = discipline.Data.Find(dictionary => dictionary.Type == "Лекционные занятия")?.Hours ?? 0;
-                    worksheet.Cells[globalCounter, 3].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
+                    loadWorksheet.Cells[currentRow, 4].Value = discipline.Data.Find(dictionary => dictionary.Type == "Практические занятия")?.Hours ?? 0;
+
+                    loadWorksheet.Cells[currentRow, 5].Value = discipline.Data.Find(dictionary => dictionary.Type == "Лабораторные занятия")?.Hours ?? 0;
+
+                    List<DisciplineData> disciplineData =
+                        discipline.Data.Where(disciplineData => ControlType.Contains(disciplineData.Type)).ToList();
+                    if (disciplineData.Count > 0)
+                    {
+                        foreach (DisciplineData data in disciplineData)
+                        {
+                            if (PrimaryType.Contains(data.Type))
+                            {
+                                loadWorksheet.Cells[currentRow, 6].Value = data.Type;
+                            }
+                            else if (AdditionalType.Contains(data.Type))
+                            {
+                                loadWorksheet.Cells[currentRow, 7].Value = data.Type;
+                            }
+                        }
+                    }
+
+                    loadWorksheet.Cells[currentRow, 8].Value = educationalGroup.NumberOfStudents;
                     
-                    worksheet.Cells[globalCounter, 4].Value = discipline.Data.Find(dictionary => dictionary.Type == "Практические занятия")?.Hours ?? 0;
-                    worksheet.Cells[globalCounter, 4].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
-                    
-                    worksheet.Cells[globalCounter, 5].Value = discipline.Data.Find(dictionary => dictionary.Type == "Лабораторные занятия")?.Hours ?? 0;
-                    worksheet.Cells[globalCounter, 5].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
-                    
-                    worksheet.Cells[globalCounter, 6].Value =
-                        discipline.Data.Find(disciplineData => ControlType.Contains(disciplineData.Type))?.Type ?? "Ошибка";
-                    worksheet.Cells[globalCounter, 6].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
-                    
-                    worksheet.Cells[globalCounter, 7].Value = educationalGroup.NumberOfStudents;
-                    worksheet.Cells[globalCounter, 7].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
-                    worksheet.Cells[globalCounter, 7].Style.Fill.SetBackground(Color.LightGray);
-                    
-                    globalCounter++;
+                    LoadDecorator.DecorateRow(loadWorksheet, currentRow);
+
+                    currentRow++;
                 }
 
-                if (globalCounter > from)
+                if (currentRow > from)
                 {
-                    int to = globalCounter - 1;
-                    worksheet.Cells[from, 1, to, 7].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
+                    int to = currentRow - 1;
+                    loadWorksheet.Cells[from, 1, to, 8].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
                 }
             }
         }
 
-        worksheet.Cells[globalCounter-1, 1, globalCounter-1, 7].Value = ""; // TODO: Remove this
-        worksheet.Cells[globalCounter-1, 1, globalCounter-1, 7].Style.Border.BorderAround(ExcelBorderStyle.Thick, Color.Black); // TODO: Remove this
-        worksheet.Cells[globalCounter-1, 1, globalCounter-1, 7].Style.Fill.SetBackground(Color.White); // TODO: Remove this
+        loadWorksheet.Cells[currentRow-1, 1, currentRow-1, 8].Value = ""; // TODO: Remove this
+        loadWorksheet.Cells[currentRow-1, 1, currentRow-1, 8].Style.Border.BorderAround(ExcelBorderStyle.Thick, Color.Black); // TODO: Remove this
+        loadWorksheet.Cells[currentRow-1, 1, currentRow-1, 8].Style.Fill.SetBackground(Color.LightGray); // TODO: Remove this
         
         return loadPackage;
     }
@@ -112,16 +121,19 @@ file static class LoadDecorator
         // Font formatting
             loadWorksheet.Cells[1, 1, 100, 100].Style.Font.Bold = true;
             loadWorksheet.Cells[1, 1, 100, 100].Style.Font.Name = "Times New Roman";
-            loadWorksheet.Cells[1, 1, 100, 100].Style.Font.Size = 10;
-            loadWorksheet.Cells[1, 1, 100, 100].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            loadWorksheet.Cells[1, 1, 200, 10].Style.Font.Size = 10;
+            loadWorksheet.Cells[1, 1, 200, 10].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
             
+            loadWorksheet.Rows[1].Height = 25.00;
             loadWorksheet.Columns[1].Width = 34.00;
             loadWorksheet.Columns[2].Width = 66.00;
+            loadWorksheet.Columns[2].Style.WrapText = true;
             loadWorksheet.Columns[3].Width = 8.00;
             loadWorksheet.Columns[4].Width = 8.00;
             loadWorksheet.Columns[5].Width = 8.00;
-            loadWorksheet.Columns[6].Width = 17.00;
-            loadWorksheet.Columns[7].Width = 14.00;
+            loadWorksheet.Columns[6].Width = 20.00;
+            loadWorksheet.Columns[7].Width = 20.00;
+            loadWorksheet.Columns[8].Width = 14.00;
             
             // Main header region
             loadWorksheet.Cells[1, 1].Value = "Группа";
@@ -161,19 +173,39 @@ file static class LoadDecorator
             loadWorksheet.Cells[1, 6, 2, 6].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
             loadWorksheet.Cells[1, 6, 2, 6].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
             
-            loadWorksheet.Cells[1, 7].Value = "Численность";
+            loadWorksheet.Cells[1, 7].Value = "К/р (пр-т)";
             loadWorksheet.Cells[1, 7, 2, 7].Merge = true;
             loadWorksheet.Cells[1, 7, 2, 7].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
             loadWorksheet.Cells[1, 7, 2, 7].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
             loadWorksheet.Cells[1, 7, 2, 7].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
             
-            loadWorksheet.Cells[1, 8].Value = $"Кафедра: {department.Name}";
-            loadWorksheet.Cells[1, 8].Style.Font.Size = 10; // TODO: Change
-            loadWorksheet.Cells[1, 8, 1, 12].Merge = true;
-            loadWorksheet.Cells[2, 8].Value = $"Код кафедры: {department.Code}";
-            loadWorksheet.Cells[2, 8, 2, 12].Merge = true;
-            loadWorksheet.Cells[3, 8].Value = edDescription;
-            loadWorksheet.Cells[3, 8, 3, 12].Merge = true;
-            loadWorksheet.Cells[1, 8, 3, 12].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
+            loadWorksheet.Cells[1, 8].Value = "Численность";
+            loadWorksheet.Cells[1, 8, 2, 8].Merge = true;
+            loadWorksheet.Cells[1, 8, 2, 8].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            loadWorksheet.Cells[1, 8, 2, 8].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            loadWorksheet.Cells[1, 8, 2, 8].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
+            
+            loadWorksheet.Cells[1, 9].Value = $"Кафедра: {department.Name}";
+            loadWorksheet.Cells[1, 9].Style.WrapText = true;
+            loadWorksheet.Cells[1, 9, 1, 13].Merge = true;
+            loadWorksheet.Cells[1, 9, 1, 13].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            loadWorksheet.Cells[2, 9].Value = $"Код кафедры: {department.Code}";
+            loadWorksheet.Cells[2, 9, 2, 13].Merge = true;
+            loadWorksheet.Cells[3, 9].Value = edDescription;
+            loadWorksheet.Cells[3, 9, 3, 13].Merge = true;
+            loadWorksheet.Cells[1, 9, 3, 13].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
+    }
+
+    internal static void DecorateRow(ExcelWorksheet loadWorksheet, int currentRow)
+    {
+        for (int i = 1; i <= 8; i++)
+        {
+            loadWorksheet.Cells[currentRow, i].Style.Border.BorderAround(ExcelBorderStyle.Medium, Color.Black);
+        }
+        
+        loadWorksheet.Cells[currentRow, 1].Style.Fill.SetBackground(Color.LightGray);
+        loadWorksheet.Cells[currentRow, 8].Style.Fill.SetBackground(Color.LightGray);
+        loadWorksheet.Rows[currentRow].Height = 26;
+        loadWorksheet.Rows[currentRow].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
     }
 }

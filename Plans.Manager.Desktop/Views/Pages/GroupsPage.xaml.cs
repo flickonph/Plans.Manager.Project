@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using Plans.Manager.BLL.Objects;
 using Plans.Manager.BLL.Readers;
@@ -19,15 +20,15 @@ public partial class GroupsPage
 
     private void InitGroups()
     {
+        GroupsListBox.Items.Clear();
         List<Group> allGroups = XmlReader.GetGroups();
-        foreach (Group group in allGroups)
+        foreach (Card groupCard in allGroups.Select(group => new Card()
+                 {
+                     Content = group.Name,
+                     Footer = group,
+                     FontSize = 12,
+                 }))
         {
-            Card groupCard = new Card
-            {
-                Content = group.Name,
-                Footer = group,
-                FontSize = 12,
-            };
             GroupsListBox.Items.Add(groupCard);
         }
     }

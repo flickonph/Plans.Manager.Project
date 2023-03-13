@@ -17,123 +17,132 @@
         Margin="20">
         <StackPanel
             VerticalAlignment="Stretch">
-            <StackPanel>
-                <TextBlock
-                    FontSize="20"
-                Margin="0,0,0,5"
-                Text="Рабочие учебные планы" />
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <ui:CardAction
-                        Grid.Column="0"
-                        Click="CreateStudyPlans"
-                        FontSize="16"
-                        Icon="Add24"
-                        IsEnabled="True"
-                        Margin="0"
-                        x:Name="CreatePlansButton">
+            <ui:Card>
+                <StackPanel>
+                    <TextBlock
+                        FontSize="20"
+                        Margin="0,0,0,5"
+                        Text="Рабочие учебные планы" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <ui:CardAction
+                            Grid.Column="0"
+                            Click="CreateStudyPlans"
+                            FontSize="16"
+                            Icon="Add24"
+                            IsEnabled="True"
+                            Margin="0"
+                            x:Name="CreatePlansButton">
 
-                        <StackPanel>
+                            <StackPanel>
 
-                            <TextBlock
-                                FontSize="13"
-                                FontWeight="Medium"
-                                Text="Создать рабочие учебные планы" />
+                                <TextBlock
+                                    FontSize="13"
+                                    FontWeight="Medium"
+                                    Text="Создать рабочие учебные планы" />
 
-                            <TextBlock
-                                FontSize="12"
-                                Foreground="{DynamicResource TextFillColorTertiaryBrush}"
-                                Text="Рабочие учебные планы создаются с учётом заданных настроек" />
+                                <TextBlock
+                                    FontSize="12"
+                                    Foreground="{DynamicResource TextFillColorTertiaryBrush}"
+                                    Text="Рабочие учебные планы создаются с учётом заданных настроек" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                    </ui:CardAction>
-                    <ui:ProgressRing
-                        Name="CreatePlansStatus"
-                        Grid.Column="1"
-                        Visibility="Collapsed"
-                        IsIndeterminate="True"
-                        Margin="5"/>
-                </Grid>
-                <Separator Margin="5" />
-            </StackPanel>
-            <StackPanel>
-                <TextBlock
-                    FontSize="20"
-                    Margin="0,0,0,5"
-                    Text="Кафедральная нагрузка" />
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <ui:CardAction
-                        Click="CreateStudyLoad"
-                        FontSize="16"
-                        HorizontalContentAlignment="Stretch"
-                        Icon="Add24"
-                        IsEnabled="True"
-                        Margin="0"
-                        x:Name="CreateLoadButton">
-                        <StackPanel>
-                            <TextBlock
-                                FontSize="13"
-                                FontWeight="Medium"
-                                Text="Создать кафедральную нагрузку" />
-                            <TextBlock
-                                FontSize="12"
-                                Foreground="{DynamicResource TextFillColorTertiaryBrush}"
-                                Text="Кафедральная нагрузка заполняется на основе справочника групп и имеющихся учебных планов" />
-                        </StackPanel>
-                    </ui:CardAction>
-                    <ui:ProgressRing
-                        Name="CreateLoadStatus"
-                        Grid.Column="1"
-                        Visibility="Collapsed"
-                        IsIndeterminate="True"
-                        Margin="5"/>
-                </Grid>
-                <Separator Margin="5" />
-            </StackPanel>
-            <StackPanel>
-                <TextBlock
-                    FontSize="20"
-                    Margin="0,0,0,5"
-                    Text="Справочники" />
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <ui:CardAction
-                        Click="CreateDepartments"
-                        HorizontalContentAlignment="Stretch"
-                        Icon="Add24"
-                        Margin="0"
-                        VerticalAlignment="Bottom"
-                        x:Name="CreateDepartmentsButton">
-                        <StackPanel>
-                            <TextBlock
-                                FontSize="13"
-                                FontWeight="Medium"
-                                Text="Создать справочник кафедр" />
-                            <TextBlock
-                                FontSize="12"
-                                Foreground="{DynamicResource TextFillColorTertiaryBrush}"
-                                Text="Справочник кафедр создаётся в автоматическом режиме" />
-                        </StackPanel>
-                    </ui:CardAction>
-                    <ui:ProgressRing
-                        Name="CreateDepartmentsStatus"
-                        Grid.Column="1"
-                        Visibility="Collapsed"
-                        IsIndeterminate="True"
-                        Margin="5"/>
-                </Grid>
-            </StackPanel>
+                        </ui:CardAction>
+                        <ui:ProgressRing
+                            Name="CreatePlansStatus"
+                            Grid.Column="1"
+                            Visibility="Collapsed"
+                            IsIndeterminate="True"
+                            Margin="5"/>
+                    </Grid>
+                </StackPanel>
+            </ui:Card>
+            
+            <Separator Margin="5" />
+            
+            <ui:Card>
+                <StackPanel>
+                    <TextBlock
+                        FontSize="20"
+                        Margin="0,0,0,5"
+                        Text="Кафедральная нагрузка" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <ui:CardAction
+                            Click="CreateStudyLoad"
+                            FontSize="16"
+                            HorizontalContentAlignment="Stretch"
+                            Icon="Add24"
+                            IsEnabled="True"
+                            Margin="0"
+                            x:Name="CreateLoadButton">
+                            <StackPanel>
+                                <TextBlock
+                                    FontSize="13"
+                                    FontWeight="Medium"
+                                    Text="Создать кафедральную нагрузку" />
+                                <TextBlock
+                                    FontSize="12"
+                                    Foreground="{DynamicResource TextFillColorTertiaryBrush}"
+                                    Text="Кафедральная нагрузка заполняется на основе справочника групп и имеющихся учебных планов" />
+                            </StackPanel>
+                        </ui:CardAction>
+                        <ui:ProgressRing
+                            Name="CreateLoadStatus"
+                            Grid.Column="1"
+                            Visibility="Collapsed"
+                            IsIndeterminate="True"
+                            Margin="5"/>
+                    </Grid>
+                </StackPanel>
+            </ui:Card>
+            <Separator Margin="5" />
+            
+            <ui:Card>
+                <StackPanel>
+                    <TextBlock
+                        FontSize="20"
+                        Margin="0,0,0,5"
+                        Text="Справочники" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <ui:CardAction
+                            Click="CreateDepartments"
+                            HorizontalContentAlignment="Stretch"
+                            Icon="Add24"
+                            Margin="0"
+                            VerticalAlignment="Bottom"
+                            x:Name="CreateDepartmentsButton">
+                            <StackPanel>
+                                <TextBlock
+                                    FontSize="13"
+                                    FontWeight="Medium"
+                                    Text="Создать справочник кафедр" />
+                                <TextBlock
+                                    FontSize="12"
+                                    Foreground="{DynamicResource TextFillColorTertiaryBrush}"
+                                    Text="Справочник кафедр создаётся в автоматическом режиме" />
+                            </StackPanel>
+                        </ui:CardAction>
+                        <ui:ProgressRing
+                            Name="CreateDepartmentsStatus"
+                            Grid.Column="1"
+                            Visibility="Collapsed"
+                            IsIndeterminate="True"
+                            Margin="5"/>
+                    </Grid>
+                </StackPanel>
+            </ui:Card>
             <ui:Snackbar Name="NotificationSnackbar" />
         </StackPanel>
     </Grid>
